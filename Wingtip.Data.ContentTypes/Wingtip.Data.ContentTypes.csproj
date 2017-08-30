@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CCA15A1-56A7-4408-896D-9E8911684BA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wingtip.Data.ContentTypes</RootNamespace>
+    <AssemblyName>Wingtip.Data.ContentTypes</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.5</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{e2114f41-c03a-42b8-9aff-b539506a84a7}</FeatureId>
+    </None>
+    <None Include="Features\WingtipContentTypeFeature\WingtipContentTypeFeature.feature">
+      <FeatureId>{cdf273ac-de7f-4b18-bfbd-1a7c4503cc38}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{74125baa-cc5a-4d0e-8c07-5dde28cae711}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WingtipInvoice\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5ad83268-fae3-4978-a6a7-e691f634af50}</SharePointProjectItemId>
+    </None>
+    <None Include="WingtipSupplier\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{05c5a8b5-973c-46cd-9313-0bae200cd29f}</SharePointProjectItemId>
+    </None>
+    <None Include="WingtipContacts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{36320d23-c6d7-4768-b35d-396ef6d56193}</SharePointProjectItemId>
+    </None>
+    <None Include="WingtipContacts\WingtipContactsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{be364da6-9314-47ed-af27-77a16d068a98}</SharePointProjectItemId>
+    </None>
+    <None Include="WingtipContact\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d43c8988-2b08-4422-81a3-7def2595f671}</SharePointProjectItemId>
+    </None>
+    <None Include="WingtipCustomer\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f61d253a-6182-4465-858b-d8febec50dbe}</SharePointProjectItemId>
+    </None>
+    <None Include="XSL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6135674e-7d11-4a54-ad46-c11c800a29cf}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="WingtipInvoice\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XSL\Contacts_Main.xsl" />
+    <Content Include="Features\WingtipContentTypeFeature\WingtipContentTypeFeature.Template.xml">
+      <DependentUpon>WingtipContentTypeFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="WingtipSupplier\Elements.xml" />
+    <Content Include="WingtipContacts\Elements.xml" />
+    <Content Include="WingtipContacts\Schema.xml" />
+    <Content Include="WingtipContacts\WingtipContactsInstance\Elements.xml" />
+    <Content Include="WingtipContact\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WingtipCustomer\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

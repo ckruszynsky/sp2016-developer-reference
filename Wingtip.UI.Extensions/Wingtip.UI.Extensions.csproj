@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{976905CC-4697-4D56-888E-8BFB3D59D55D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wingtip.UI.Extensions</RootNamespace>
+    <AssemblyName>Wingtip.UI.Extensions</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.5</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layouts\Wingtip.UI.Extensions\InvoicesSettings.aspx.cs">
+      <DependentUpon>InvoicesSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Wingtip.UI.Extensions\InvoicesSettings.aspx.designer.cs">
+      <DependentUpon>InvoicesSettings.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Wingtip.UI.Extensions\WingtipInvoiceChangeStatus.aspx.cs">
+      <DependentUpon>WingtipInvoiceChangeStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Wingtip.UI.Extensions\WingtipInvoiceChangeStatus.aspx.designer.cs">
+      <DependentUpon>WingtipInvoiceChangeStatus.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{5e35b74d-ff73-4c7a-8c3e-64c39556d24f}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e1cedbf5-efb6-42d3-a3a3-fd5b625d881b}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{15c436bd-d027-4c7d-8afa-e1af59f81d93}</SharePointProjectItemId>
+    </None>
+    <None Include="NotificationAndStatusRibbonSample\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d8d7235f-45a0-4ffa-bda9-1f0479033bc9}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{56dd76a5-2528-47b4-a2ef-9a40dce84dba}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WingtipInvoiceRibbons\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ea87500e-ab9a-4450-ac5b-0c51f867d4fd}</SharePointProjectItemId>
+    </None>
+    <None Include="WingtipInvoicesCustomActions\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{295537e7-1ff9-4eee-9cb9-0ab46b83e282}</SharePointProjectItemId>
+    </None>
+    <None Include="WingtipInvoiceSiteSettingsGroupAction\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{95b13e65-e11c-4c0c-b804-fad7a9117808}</SharePointProjectItemId>
+    </None>
+    <None Include="WingtipInvoices\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{36369ea6-0086-4d75-adb1-70371692f8bf}</SharePointProjectItemId>
+    </None>
+    <None Include="WingtipInvoices\WingtipInvoicesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e14090a9-072c-49c2-b75e-206d988b1cf7}</SharePointProjectItemId>
+    </None>
+    <None Include="WingtipInvoice\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{54d9a72f-fbb9-4723-ac17-133c39a525af}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Images\Wingtip.UI.Extensions\Baloon_16x16.png" />
+    <Content Include="Images\Wingtip.UI.Extensions\Baloon_32x32.png" />
+    <Content Include="Images\Wingtip.UI.Extensions\IconArchive_16x16.png" />
+    <Content Include="Images\Wingtip.UI.Extensions\IconArchive_32x32.png" />
+    <Content Include="Layouts\Wingtip.UI.Extensions\InvoicesSettings.aspx" />
+    <Content Include="Layouts\Wingtip.UI.Extensions\WingtipInvoiceChangeStatus.aspx" />
+    <Content Include="NotificationAndStatusRibbonSample\Elements.xml" />
+    <Content Include="WingtipInvoiceRibbons\Elements.xml" />
+    <Content Include="WingtipInvoicesCustomActions\Elements.xml" />
+    <Content Include="WingtipInvoiceSiteSettingsGroupAction\Elements.xml" />
+    <Content Include="WingtipInvoices\EditDlg.htm" />
+    <Content Include="WingtipInvoices\Elements.xml" />
+    <Content Include="WingtipInvoices\FileDlg.htm" />
+    <Content Include="WingtipInvoices\Repair.aspx" />
+    <Content Include="WingtipInvoices\Schema.xml" />
+    <Content Include="WingtipInvoices\Upload.aspx" />
+    <Content Include="WingtipInvoices\WingtipInvoicesInstance\Elements.xml" />
+    <Content Include="WingtipInvoice\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

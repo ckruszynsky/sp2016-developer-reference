@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF93A4EC-6164-4D76-8A6C-2FD61AF68127}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wingtip.Apps.Contacts</RootNamespace>
+    <AssemblyName>Wingtip.Apps.Contacts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.6</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{d24f8b61-4c91-45de-9de0-c5fd001afaf6}</AppFeaturePartId>
+    <WspPartId>{6383e511-e26a-4a66-8562-e7e101271af5}</WspPartId>
+    <WorkflowPartId>{54039329-3a42-4cd6-bf63-6551f51c69ca}</WorkflowPartId>
+    <CspkgPartId>{8d42af7f-e8ed-49c0-882d-f4e02adda0ab}</CspkgPartId>
+    <SqlPackagePartId>{86e9d4e2-c6b9-471c-9da6-b1ecaf7304bc}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon_old.png" />
+    <Content Include="Images\luca.jpg" />
+    <Content Include="Images\marco.jpg" />
+    <Content Include="Images\paolo.jpg" />
+    <Content Include="Images\roberto.jpg" />
+    <Content Include="Pages\SearchContactsAppPart.aspx" />
+    <Content Include="Pages\SendDocument.aspx" />
+    <Content Include="Scripts\jquery-ui.css" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\SearchContacts.js" />
+    <Content Include="SearchContactsApp\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+    <Content Include="SendDocumentsToContact\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SendDocumentToContact\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+    <Content Include="WingtipAppContacts\Elements.xml" />
+    <Content Include="WingtipAppContacts\Schema.xml" />
+    <Content Include="WingtipAppContacts\WingtipAppContactsInstance\Elements.xml" />
+    <Content Include="WingtipAppContact\Elements.xml" />
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{668bed7e-1d21-426e-a6b9-bc332b9b4078}</SharePointProjectItemId>
+    </None>
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+    <None Include="SearchContactsApp\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{22f141f0-4803-4a77-9170-8e47e613e41a}</SharePointProjectItemId>
+    </None>
+    <None Include="SendDocumentsToContact\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{786b6acf-deaa-428a-8157-922f4cdb8a98}</SharePointProjectItemId>
+    </None>
+    <None Include="SendDocumentToContact\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{642a27f7-9cee-485f-86a7-093a9ba53268}</SharePointProjectItemId>
+    </None>
+    <None Include="WingtipAppContacts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{816d8128-82f3-4c7d-a799-8c27cfc5d400}</SharePointProjectItemId>
+    </None>
+    <None Include="WingtipAppContacts\WingtipAppContactsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{09eb0051-3e2c-4a1b-b781-ed22b02337c8}</SharePointProjectItemId>
+    </None>
+    <None Include="WingtipAppContact\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f5f525c6-e59f-4344-a31d-0ae163c566b4}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{86e9d4e2-c6b9-471c-9da6-b1ecaf7304bc}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8f50833c-56c9-4832-b440-e001c8f51fad}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2a322a54-69dc-4c1f-b39f-79cd97b99f81}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{988203ea-da95-4af1-bac9-ed09981db4ae}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{78936cc5-c881-4e1c-b5da-e451453dbbdc}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

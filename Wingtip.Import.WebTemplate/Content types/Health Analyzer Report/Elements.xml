@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0100F95DB3A97E8046B58C6A54FB31F2BD46" Name="Health Analyzer Report" Group="_Hidden" Description="A report from the health analyzer" Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Health Analyzer Report" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+			<FieldRef ID="{89efcbd9-9796-41f0-b569-65325f1882dc}" Name="HealthReportSeverityIcon" />
+			<FieldRef ID="{505423c5-f085-48b9-9432-12073d643ba5}" Name="HealthReportSeverity" />
+			<FieldRef ID="{a63505f2-f42c-4d94-b03b-78ba2c73d40e}" Name="HealthReportCategory" />
+			<FieldRef ID="{b4c8faec-5d60-49ee-a5fb-6165f5c3e6a9}" Name="HealthReportExplanation" />
+			<FieldRef ID="{8aa22caa-8000-44c9-b343-a7705bbed863}" Name="HealthReportRemedy" />
+			<FieldRef ID="{84a318aa-9035-4529-98b9-e08bb20a5da0}" Name="HealthReportServers" />
+			<FieldRef ID="{e2b0b450-6795-4b86-86b7-3c21ab1797fb}" Name="HealthReportServices" />
+			<FieldRef ID="{cf4ff575-f1f5-4c5b-b595-54bbcccd0c62}" Name="HealthRuleReportLink" />
+			<FieldRef ID="{7dd0a092-8704-4ed2-8253-ac309150ac59}" Name="HealthRuleType" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AllowedTypes>
+  <Assembly Name="Wingtip.WF.CustomActivities">
+    <Namespace Name="Wingtip.WF.CustomActivities">
+      <Type>CreditCardValidationActivity</Type>
+    </Namespace>
+  </Assembly>
+</AllowedTypes>

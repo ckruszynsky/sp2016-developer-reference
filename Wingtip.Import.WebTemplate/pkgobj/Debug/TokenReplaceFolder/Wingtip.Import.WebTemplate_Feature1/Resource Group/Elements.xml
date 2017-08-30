@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0100CA13F2F8D61541B180952DFB25E3E8E4" Name="Resource Group" Group="Group Work Content Types" Description="Add a new resource group." Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Resource Group" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" />
+			<FieldRef ID="{a4e7b3e1-1b0a-4ffa-8426-c94d4cb8cc57}" Name="Facilities" Required="TRUE" />
+			<FieldRef ID="{3f155110-a6a2-4d70-926c-94648101f0e8}" Name="Description" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>FacilitiesForm</Display>
+					<Edit>FacilitiesForm</Edit>
+					<New>FacilitiesForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

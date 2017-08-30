@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Wingtip.WebParts.HelloWorldWebPart.HelloWorldWebPart, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Wingtip.WebParts - HelloWorldWebPart</property>
+        <property name="Description" type="string">A hello world sample web part</property>
+        <property name="CatalogIconImageUrl" type="string">/_layouts/images/ICTXT.GIF</property>
+        <property name="AllowEdit" type="bool">true</property>
+        <property name="ChromeType" type="chrometype">TitleAndBorder</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="2389d689-0ee6-4611-9f9f-bb579998814e" Scope="Web" Title="PropertyBag feature of exported web template &quot;Projects&quot;">
+  <ElementManifests>
+    <ElementManifest Location="PropertyBags\Elements.xml" />
+    <ElementFile Location="Resources\resources.en-US.resx" />
+  </ElementManifests>
+</Feature>

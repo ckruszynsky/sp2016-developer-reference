@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x01003A8AA7A4F53046158C5ABD98036A01D5" Name="Health Analyzer Rule Definition" Group="_Hidden" Description="Create a New Health Analyzer Rule" Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Health Analyzer Rule Definition" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+			<FieldRef ID="{e59f08c9-fa34-4f94-a00a-f6458b1d3c56}" Name="HealthRuleScope" />
+			<FieldRef ID="{2d6e61d0-be31-460c-ab8b-77d8b369f517}" Name="HealthRuleService" />
+			<FieldRef ID="{7dd0a092-8704-4ed2-8253-ac309150ac59}" Name="HealthRuleType" />
+			<FieldRef ID="{a63505f2-f42c-4d94-b03b-78ba2c73d40e}" Name="HealthReportCategory" />
+			<FieldRef ID="{26761ba3-729d-4bfc-9658-77b55e01f8d5}" Name="HealthRuleSchedule" />
+			<FieldRef ID="{7b2b1712-a73d-4ad7-a9d0-662f0291713d}" Name="HealthRuleCheckEnabled" />
+			<FieldRef ID="{1e41a55e-ef71-4740-b65a-d11e24c1d00d}" Name="HealthRuleAutoRepairEnabled" />
+			<FieldRef ID="{6b6b1455-09ee-43b7-beea-4dc97456de2f}" Name="HealthRuleVersion" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

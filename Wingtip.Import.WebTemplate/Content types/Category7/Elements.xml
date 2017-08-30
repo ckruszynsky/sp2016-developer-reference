@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x010019ACC57FBA4146AFA4C822E719824BED" Name="Category" Group="Community Content Types" Description="(Category Content Type Description)" Overwrite="TRUE" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Category" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+			<FieldRef ID="{ab065451-14d6-485a-88c3-414c908d50d3}" Name="CategoryDescription" />
+			<FieldRef ID="{7cc564f1-abd4-4a2f-bd9b-85dd1d071bdc}" Name="CategoryImage" />
+			<FieldRef ID="{d2264183-83dc-4d08-a57d-974686192d7a}" Name="TopicCount" />
+			<FieldRef ID="{d42630f0-0084-4b16-b876-80fe8cf88879}" Name="ReplyCount" />
+			<FieldRef ID="{497e00df-75c8-4e61-ac5c-a143b6a0fddc}" Name="LastPostBy" />
+			<FieldRef ID="{539458a6-152c-460f-a915-53722c6eb4a6}" Name="LastPostDate" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>ListForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

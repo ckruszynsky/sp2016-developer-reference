@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="d71f1c32-bc42-4355-bbd9-89fdfdc647df" Scope="Web" Title="Web Events feature of exported web template &quot;Projects&quot;">
+  <ElementManifests>
+    <ElementManifest Location="Receivers\Elements.xml" />
+  </ElementManifests>
+</Feature>

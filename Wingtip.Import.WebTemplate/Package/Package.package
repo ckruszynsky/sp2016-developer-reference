@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c4c4e471-9778-4868-9652-e2b586404693" solutionId="63cbbd96-6cc0-4a4f-bd94-99dec319d71e" resetWebServer="false" sharePointProductVersion="16.0" name="Wingtip.Import.WebTemplate" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="21e4c7f8-d2a7-48d0-88eb-5f302bbfed18" />
+    <featureReference itemId="67887406-1a1a-47d0-9e5c-796f4c49d029" />
+    <featureReference itemId="d2ca8e54-2d82-4dc5-b9f1-6e5f251093b6" />
+    <featureReference itemId="35b13c86-3a0e-4b7d-b449-c92d87d11a38" />
+    <featureReference itemId="c57fb98e-7f0b-4350-9d48-2efd22d230c6" />
+  </features>
+</package>

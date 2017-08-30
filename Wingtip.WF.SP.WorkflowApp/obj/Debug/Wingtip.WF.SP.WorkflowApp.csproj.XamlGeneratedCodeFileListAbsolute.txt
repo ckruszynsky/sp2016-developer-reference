@@ -1,0 +1,5 @@
+obj\Debug\_Wingtip.WF.SP.WorkflowApp.g.cs
+obj\Debug\Workflow.g.cs
+obj\Debug\Wingtip.WF.SP.WorkflowApp.OrdersWorkflow_Workflow_BeforeInitializeComponentHelper.cs
+obj\Debug\_AssemblyInfo_9923450b96b846c098cf92286e7206fd.g.cs
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.SP.WorkflowApp\obj\Debug\Wingtip.WF.SP.WorkflowApp.OrdersWorkflow_Workflow_CompiledExpressionRoot.cs

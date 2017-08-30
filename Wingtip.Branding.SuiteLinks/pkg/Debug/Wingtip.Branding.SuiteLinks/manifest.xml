@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="fd6ddf6e-6a44-4ada-bb40-06d4e733d76c" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="Wingtip.Branding.SuiteLinks.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="Wingtip.Branding.SuiteLinks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9e1f9a2d426c098e" Namespace="Wingtip.Branding.SuiteLinks.Element" TypeName="*" SafeAgainstScript="True" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="ControlTemplates\Wingtip.Branding.SuiteLinks\CustomSuiteLinksDelegate.ascx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="Wingtip.Branding.SuiteLinks_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="_catalogsmasterpage_global" Url="_catalogs/masterpage" SetupPath="global" RootWebOnly="FALSE" Path="Files\_catalogs\masterpage" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="minimal.master" Type="GhostableInLibrary" Level="Published" Path="minimal.master">
+			<Property Name="ID" Value="2" />
+			<Property Name="ContentTypeId" Value="0x01010500E20F999D9CD5D341AD9E072167F4467E" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="projects/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="minimal.master" />
+			<Property Name="MetaInfo" Value="2;#vti_parserversion:SR|16.0.0.4456&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;vti_author:SR|i:0#.w|wingtip\\administrator&#xD;&#xA;vti_setuppath:SR|global\\minimal.master&#xD;&#xA;UIVersion:SR|4&#xD;&#xA;vti_generator:SR|Microsoft SharePoint&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|i:0#.w|wingtip\\administrator&#xD;&#xA;vti_cachedcustomprops:VX|vti_title&#xD;&#xA;ContentTypeId:SW|0x01010500E20F999D9CD5D341AD9E072167F4467E&#xD;&#xA;vti_cachedtitle:SR|&lt;asp:ContentPlaceHolder id=&quot;PlaceHolderPageTitle&quot; runat=&quot;server&quot;/&gt;&#xD;&#xA;vti_metatags:VR|GENERATOR Microsoft\\ SharePoint progid SharePoint.WebPartPage.Document HTTP-EQUIV=Content-Type text/html;\\ charset=utf-8 HTTP-EQUIV=Expires 0&#xD;&#xA;vti_title:SR|&lt;asp:ContentPlaceHolder id=&quot;PlaceHolderPageTitle&quot; runat=&quot;server&quot;/&gt;&#xD;&#xA;vti_cachedbodystyle:SR|&lt;body onload=&quot;javascript:if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();&quot;&gt;&#xD;&#xA;" />
+			<Property Name="Order" Value="200.000000000000" />
+			<Property Name="UIVersion" Value="4" />
+		</File>
+		<File Url="oslo.master" Type="GhostableInLibrary" Level="Published" Path="oslo.master">
+			<Property Name="ID" Value="4" />
+			<Property Name="ContentTypeId" Value="0x01010500E20F999D9CD5D341AD9E072167F4467E" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="projects/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="oslo.master" />
+			<Property Name="MetaInfo" Value="4;#DefaultCssFile:SR|osloapp.css&#xD;&#xA;vti_parserversion:SR|16.0.0.4456&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;vti_author:SR|i:0#.w|wingtip\\administrator&#xD;&#xA;vti_setuppath:SR|global\\oslo.master&#xD;&#xA;UIVersion:SR|15&#xD;&#xA;vti_generator:SR|Microsoft SharePoint&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|i:0#.w|wingtip\\administrator&#xD;&#xA;ContentTypeId:SW|0x01010500E20F999D9CD5D341AD9E072167F4467E&#xD;&#xA;vti_metatags:VR|GENERATOR Microsoft\\ SharePoint HTTP-EQUIV=Content-type text/html;\\ charset=utf-8 HTTP-EQUIV=Expires 0&#xD;&#xA;vti_cachedbodystyle:SR|&lt;body&gt;&#xD;&#xA;" />
+			<Property Name="Order" Value="400.000000000000" />
+			<Property Name="UIVersion" Value="15" />
+			<Property Name="DefaultCssFile" Value="osloapp.css" />
+		</File>
+		<File Url="oslo.preview" Type="GhostableInLibrary" Level="Published" Path="oslo.preview">
+			<Property Name="ID" Value="6" />
+			<Property Name="ContentTypeId" Value="0x0101060086708B1025688E47B321F81FF9BA1D38" />
+			<Property Name="ContentType" Value="Master Page Preview" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="projects/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="oslo.preview" />
+			<Property Name="MetaInfo" Value="6;#vti_parserversion:SR|16.0.0.4456&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_author:SR|i:0#.w|wingtip\\administrator&#xD;&#xA;vti_setuppath:SR|global\\oslo.preview&#xD;&#xA;UIVersion:SR|15&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|i:0#.w|wingtip\\administrator&#xD;&#xA;ContentTypeId:SW|0x0101060086708B1025688E47B321F81FF9BA1D38&#xD;&#xA;" />
+			<Property Name="Order" Value="600.000000000000" />
+			<Property Name="UIVersion" Value="15" />
+		</File>
+		<File Url="seattle.master" Type="GhostableInLibrary" Level="Published" Path="seattle.master">
+			<Property Name="ID" Value="3" />
+			<Property Name="ContentTypeId" Value="0x01010500E20F999D9CD5D341AD9E072167F4467E" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="projects/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="seattle.master" />
+			<Property Name="MetaInfo" Value="3;#DefaultCssFile:SR|corev15app.css&#xD;&#xA;vti_parserversion:SR|16.0.0.4456&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;vti_author:SR|i:0#.w|wingtip\\administrator&#xD;&#xA;vti_setuppath:SR|global\\seattle.master&#xD;&#xA;UIVersion:SR|15&#xD;&#xA;vti_generator:SR|Microsoft SharePoint&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|i:0#.w|wingtip\\administrator&#xD;&#xA;ContentTypeId:SW|0x01010500E20F999D9CD5D341AD9E072167F4467E&#xD;&#xA;vti_metatags:VR|GENERATOR Microsoft\\ SharePoint HTTP-EQUIV=Content-type text/html;\\ charset=utf-8 HTTP-EQUIV=Expires 0&#xD;&#xA;vti_cachedbodystyle:SR|&lt;body&gt;&#xD;&#xA;" />
+			<Property Name="Order" Value="300.000000000000" />
+			<Property Name="UIVersion" Value="15" />
+			<Property Name="DefaultCssFile" Value="corev15app.css" />
+		</File>
+		<File Url="seattle.preview" Type="GhostableInLibrary" Level="Published" Path="seattle.preview">
+			<Property Name="ID" Value="5" />
+			<Property Name="ContentTypeId" Value="0x0101060086708B1025688E47B321F81FF9BA1D38" />
+			<Property Name="ContentType" Value="Master Page Preview" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="projects/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="seattle.preview" />
+			<Property Name="MetaInfo" Value="5;#vti_parserversion:SR|16.0.0.4456&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_author:SR|i:0#.w|wingtip\\administrator&#xD;&#xA;vti_setuppath:SR|global\\seattle.preview&#xD;&#xA;UIVersion:SR|15&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|i:0#.w|wingtip\\administrator&#xD;&#xA;ContentTypeId:SW|0x0101060086708B1025688E47B321F81FF9BA1D38&#xD;&#xA;" />
+			<Property Name="Order" Value="500.000000000000" />
+			<Property Name="UIVersion" Value="15" />
+		</File>
+		<File Url="v4.master" Type="GhostableInLibrary" Level="Published" Path="v4.master">
+			<Property Name="ID" Value="1" />
+			<Property Name="ContentTypeId" Value="0x01010500E20F999D9CD5D341AD9E072167F4467E" />
+			<Property Name="ContentType" Value="Master Page" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="projects/_catalogs/masterpage" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="v4.master" />
+			<Property Name="MetaInfo" Value="1;#vti_parserversion:SR|16.0.0.4456&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_charset:SR|utf-8&#xD;&#xA;vti_author:SR|i:0#.w|wingtip\\administrator&#xD;&#xA;vti_setuppath:SR|global\\v4.master&#xD;&#xA;UIVersion:SR|4&#xD;&#xA;vti_generator:SR|Microsoft SharePoint&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|i:0#.w|wingtip\\administrator&#xD;&#xA;vti_cachedcustomprops:VX|vti_title&#xD;&#xA;ContentTypeId:SW|0x01010500E20F999D9CD5D341AD9E072167F4467E&#xD;&#xA;vti_cachedtitle:SR|&lt;asp:ContentPlaceHolder id=&quot;PlaceHolderPageTitle&quot; runat=&quot;server&quot;/&gt;&#xD;&#xA;vti_metatags:VR|HTTP-EQUIV=X-UA-Compatible IE=8 GENERATOR Microsoft\\ SharePoint progid SharePoint.WebPartPage.Document HTTP-EQUIV=Content-Type text/html;\\ charset=utf-8 HTTP-EQUIV=Expires 0&#xD;&#xA;vti_title:SR|&lt;asp:ContentPlaceHolder id=&quot;PlaceHolderPageTitle&quot; runat=&quot;server&quot;/&gt;&#xD;&#xA;vti_cachedbodystyle:SR|&lt;body scroll=&quot;no&quot; onload=&quot;if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();&quot; class=&quot;v4master&quot;&gt;&#xD;&#xA;" />
+			<Property Name="Order" Value="100.000000000000" />
+			<Property Name="UIVersion" Value="4" />
+		</File>
+	</Module>
+</Elements>

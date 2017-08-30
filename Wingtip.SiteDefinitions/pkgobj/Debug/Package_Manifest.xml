@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="b1d2324c-13e1-42ad-94da-bd02ff2ca759" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="Wingtip.SiteDefinitions.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="SiteTemplates\WTProjects\default.aspx" />
+    <TemplateFile Location="SiteTemplates\WTProjects\Xml\onet.xml" />
+    <TemplateFile Location="1033\xml\webtemp_WTProjects.xml" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="Wingtip.SiteDefinitions_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="13d7757f-f5b9-4fcd-803d-8ad83642ddbd" 
+        solutionId="13d7757f-f5b9-4fcd-803d-8ad83642ddbd" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Wingtip.WF.SP.WorkflowApp"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="e70814bd-48dc-493e-96bd-8dafb9aaaf23" />
+  </features>
+</package>

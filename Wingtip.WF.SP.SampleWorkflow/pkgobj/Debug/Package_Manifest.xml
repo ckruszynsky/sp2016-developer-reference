@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="84928efb-9d2e-4881-9da2-72fe75c09f81" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="Wingtip.WF.SP.SampleWorkflow.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="Wingtip.WF.SP.SampleWorkflow_Feature2\Feature.xml" />
+    <FeatureManifest Location="Wingtip.WF.SP.SampleWorkflow_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

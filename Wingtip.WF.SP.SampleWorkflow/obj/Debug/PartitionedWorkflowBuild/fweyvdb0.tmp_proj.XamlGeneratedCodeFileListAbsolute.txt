@@ -1,0 +1,4 @@
+obj\Debug\PartitionedWorkflowBuild\_Wingtip.WF.SP.SampleWorkflow.g.cs
+obj\Debug\PartitionedWorkflowBuild\Workflow.g.cs
+obj\Debug\PartitionedWorkflowBuild\Wingtip.WF.SP.SampleWorkflow.CheckoutItem_Workflow_BeforeInitializeComponentHelper.cs
+obj\Debug\PartitionedWorkflowBuild\_AssemblyInfo_f0f08a771370465d98ef7c885b0f295f.g.cs

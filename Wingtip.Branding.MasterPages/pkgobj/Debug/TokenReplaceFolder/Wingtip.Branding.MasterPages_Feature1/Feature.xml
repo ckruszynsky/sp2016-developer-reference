@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="637aaf86-11c7-4f8c-a7b0-ae91e35932db" Scope="Web" Title="Wingtip.Branding.MasterPages Feature1">
+  <ElementManifests>
+    <ElementManifest Location="MasterPages\Elements.xml" />
+    <ElementFile Location="MasterPages\WingtipTeam.master" />
+  </ElementManifests>
+</Feature>

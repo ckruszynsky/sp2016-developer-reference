@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="d4211173-69d6-4af6-82f0-77b5d66229cf" solutionId="d4211173-69d6-4af6-82f0-77b5d66229cf" resetWebServer="false" sharePointProductVersion="16.0" name="Wingtip.Branding.MasterPages" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="65f4ec02-e6f1-4ade-a14b-b11734dc3c40" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="45c690c6-25b0-4b31-8bb6-c9c2d6e563ce" />
+  </projectItems>
+</package>

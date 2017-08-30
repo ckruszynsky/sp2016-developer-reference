@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0100C30DDA8EDB2E434EA22D793D9EE42058" Name="Timecard" Group="Group Work Content Types" Description="Add a new timecard data." Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Timecard" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+			<FieldRef ID="{211a8cfc-93b7-4173-9254-0bfe2d1643da}" Name="UserName" Required="TRUE" />
+			<FieldRef ID="{2139e5cc-6c75-4a65-b84c-00fe93027db3}" Name="Date" Required="TRUE" />
+			<FieldRef ID="{61fc45dd-b33d-4679-8646-be9e6584fadd}" Name="DayOfWeek" />
+			<FieldRef ID="{05e6336c-d22e-478e-9414-366762883b3f}" Name="Start" />
+			<FieldRef ID="{04b29608-b1e8-4ff9-90d5-5328096dd5ac}" Name="End" />
+			<FieldRef ID="{ee394fd4-4c11-4d8e-baff-83270c1921aa}" Name="In" />
+			<FieldRef ID="{fde05b9b-52bf-43dc-9b96-bb35fa7aa05d}" Name="Out" />
+			<FieldRef ID="{9b12fb06-254e-43b3-bfc8-8eea422ebc9f}" Name="Break" />
+			<FieldRef ID="{3bdf7bd3-f229-419e-8e12-3dfecb49ed38}" Name="ScheduledWork" />
+			<FieldRef ID="{35d79e8b-3701-4659-9c27-c070ed3c2bfa}" Name="Overtime" />
+			<FieldRef ID="{aaa68c08-6276-4337-9bce-b9cd852c7328}" Name="NightWork" />
+			<FieldRef ID="{dc9100ec-251d-4e81-a6cb-d967a065ba24}" Name="HolidayNightWork" />
+			<FieldRef ID="{df7f27a4-d87b-4a97-947b-13d1d4f7e6de}" Name="Late" />
+			<FieldRef ID="{a2a86efe-c28e-4dde-ab56-0afa31664bbc}" Name="LeaveEarly" />
+			<FieldRef ID="{63c1c608-df6f-4cfa-bcab-fdbf9c223e31}" Name="Oof" />
+			<FieldRef ID="{dfd58778-bf8e-4769-8265-09ac03159eed}" Name="Vacation" />
+			<FieldRef ID="{44e16d52-da1b-4e72-8bdb-89a3b77ec8b0}" Name="NumberOfVacation" />
+			<FieldRef ID="{691b9a4b-512e-4341-b3f1-68914130d5b2}" Name="ShortComment" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>ListForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

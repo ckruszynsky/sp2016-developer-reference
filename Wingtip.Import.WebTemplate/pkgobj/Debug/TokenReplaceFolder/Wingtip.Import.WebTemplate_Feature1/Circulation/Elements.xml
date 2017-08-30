@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x01000F389E14C9CE4CE486270B9D4713A5D6" Name="Circulation" Group="Group Work Content Types" Description="Add a new Circulation." Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Circulation" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" />
+			<FieldRef ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" Name="Body" />
+			<FieldRef ID="{c1e86ea6-7603-493c-ab5d-db4bbfe8f96a}" Name="DueDate" />
+			<FieldRef ID="{9b0e6471-c5c5-42ef-9ade-63170bf28819}" Name="Confidential" />
+			<FieldRef ID="{7266b59c-030b-4ca3-bc09-bb8e76ad969b}" Name="AllowEditing" />
+			<FieldRef ID="{e0f298a5-7e3e-4895-9ff8-90d88ec4526d}" Name="V4SendTo" Required="TRUE" />
+			<FieldRef ID="{ef7465d3-5d54-487b-b081-ade80acae88e}" Name="Confirmations" />
+			<FieldRef ID="{6df9bd52-550e-4a30-bc31-a4366832a87e}" Name="Comments" />
+			<FieldRef ID="{cf68a174-123b-413e-9ec1-b43e3a3175d7}" Name="WhatsNew" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Edit>GroupBoardCirculationEditForm</Edit>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

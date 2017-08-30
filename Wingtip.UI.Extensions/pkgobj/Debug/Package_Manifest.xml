@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="56dd76a5-2528-47b4-a2ef-9a40dce84dba" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="Wingtip.UI.Extensions.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Images\Wingtip.UI.Extensions\Baloon_16x16.png" />
+    <TemplateFile Location="Images\Wingtip.UI.Extensions\Baloon_32x32.png" />
+    <TemplateFile Location="Images\Wingtip.UI.Extensions\IconArchive_16x16.png" />
+    <TemplateFile Location="Images\Wingtip.UI.Extensions\IconArchive_32x32.png" />
+    <TemplateFile Location="Layouts\Wingtip.UI.Extensions\InvoicesSettings.aspx" />
+    <TemplateFile Location="Layouts\Wingtip.UI.Extensions\WingtipInvoiceChangeStatus.aspx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="Wingtip.UI.Extensions_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <!-- Site Columns used by the Content Type -->
+  <Field
+    ID="{20ED0A44-14C6-4FF6-979F-432AFED097FA}"
+    Name="WingtipProjectCode"
+    StaticName="WingtipProjectCode"
+    DisplayName="Code"
+    Type="Text"
+    Group="Wingtip Columns"
+    Sortable="TRUE" />
+  <Field
+    ID="{1C55DB51-10A3-48FB-A9D2-AC3E784852C4}"
+    Name="WingtipProjectDescription"
+    StaticName="WingtipProjectDescription"
+    DisplayName="Description"
+    Type="Text"
+    Group="Wingtip Columns"
+    Sortable="TRUE" />
+  <Field
+    ID="{B8B65F6F-2163-418E-88B5-CFF2BB2226A7}"
+    Name="WingtipProjectStatus"
+    StaticName="WingtipProjectStatus"
+    DisplayName="Status"
+    Type="Choice"
+    Group="Wingtip Columns"
+    Sortable="TRUE">
+    <Default>Created</Default>
+    <CHOICES>
+      <CHOICE>Created</CHOICE>
+      <CHOICE>Approved</CHOICE>
+      <CHOICE>Rejected</CHOICE>
+      <CHOICE>Completed</CHOICE>
+      <CHOICE>Canceled</CHOICE>
+    </CHOICES>
+  </Field>
+  <Field
+    ID="{85BD4A8A-339C-459F-B7C2-D5AD52ABBD04}"
+    Name="WingtipProjectNotes"
+    StaticName="WingtipProjectNotes"
+    DisplayName="Notes"
+    Type="Text"
+    Group="Wingtip Columns"
+    Sortable="TRUE" />
+
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010008BF60F947C646A59FE204C2B2AC9A5D"
+               Name="WingtipProject"
+               Group="Wingtip Content Types"
+               Description="Project Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef
+        ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}"
+        Name="Title"
+        DisplayName="Title"
+        Required="TRUE" />
+      <FieldRef
+        ID="{20ED0A44-14C6-4FF6-979F-432AFED097FA}"
+        Name="WingtipProjectCode"
+        Required="TRUE" />
+      <FieldRef
+        ID="{1C55DB51-10A3-48FB-A9D2-AC3E784852C4}"
+        Name="WingtipProjectDescription" />
+      <FieldRef
+        ID="{B8B65F6F-2163-418E-88B5-CFF2BB2226A7}"
+        Name="WingtipProjectStatus"
+        Required="TRUE" />
+      <FieldRef
+        ID="{85BD4A8A-339C-459F-B7C2-D5AD52ABBD04}"
+        Name="WingtipProjectNotes" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

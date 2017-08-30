@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{4ca739cd-562a-44f6-8b74-c31c5d6c1554}" TemplateType="10000" Title="Wingtip Projects" Description="Wingtip Projects" Url="Lists/Projects" CustomSchema="Files\Lists\Projects\Schema.xml" HyperlinkBaseUrl="http://dev.wingtip.com/projects" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Templates xmlns:ows="Microsoft SharePoint">
+  <Template Name="WTProjects" ID="10002">
+    <Configuration ID="0" Title="Wingtip Projects" Hidden="FALSE" ImageUrl="/_layouts/images/CPVW.gif" Description="A custom site for managing projects." DisplayCategory="Wingtip">
+    </Configuration>
+  </Template>
+</Templates>

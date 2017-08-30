@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0107" Name="Message" Group="List Content Types" Description="Create a new message." Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Message" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="FALSE" Hidden="TRUE" />
+			<FieldRef ID="{a9ec25bf-5a22-4658-bd19-484e52efbe1a}" Name="ParentFolderId" />
+			<FieldRef ID="{f0218b98-d0d6-4fc1-b15b-aabeb89f32a9}" Name="DiscussionSubjectLookup" />
+			<FieldRef ID="{c5abfdc7-3435-4183-9207-3d1146895cf8}" Name="DiscussionTitle" />
+			<FieldRef ID="{dce8262a-3ae9-45aa-aab4-83bd75fb738a}" Name="_UIVersionString" />
+			<FieldRef ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" Name="Body" />
+			<FieldRef ID="{6d0f8993-5050-41f3-be6c-18902d282357}" Name="TrimmedBody" />
+			<FieldRef ID="{b0204f69-2253-43d2-99ad-c0df00031b66}" Name="CorrectBodyToShow" />
+			<FieldRef ID="{af82aa75-3039-4573-84a8-73ffdfd22733}" Name="BodyWasExpanded" />
+			<FieldRef ID="{e393d344-2e8c-425b-a8c3-89ac3144c9a2}" Name="QuotedTextWasExpanded" />
+			<FieldRef ID="{e451420d-4e62-43e3-af83-010d36e353a2}" Name="ToggleQuotedText" />
+			<FieldRef ID="{87cda0e2-fc57-4eec-a696-b0de2f61f361}" Name="ReplyNoGif" />
+			<FieldRef ID="{2ef29342-2f5f-4052-90d3-8192e0705e51}" Name="MessageId" />
+			<FieldRef ID="{769b99d9-d361-4948-b687-f01332391629}" Name="ThreadTopic" />
+			<FieldRef ID="{cef73bf1-edf6-4dd9-9098-a07d83984700}" Name="ThreadIndex" />
+			<FieldRef ID="{124527a9-fc10-48ff-8d44-960a7db405f8}" Name="EmailReferences" />
+			<FieldRef ID="{c55a4674-640b-4bae-8738-ce0439e6f6d4}" Name="ThreadingControls" />
+			<FieldRef ID="{68227570-72dd-4816-b6b6-4b81ff99a393}" Name="IndentLevel" />
+			<FieldRef ID="{26c4f53e-733a-4202-814b-377492b6c841}" Name="Indentation" />
+			<FieldRef ID="{f90bce56-87dc-4d73-bfcb-03fcaf670500}" Name="StatusBar" />
+			<FieldRef ID="{c7e9537e-bde4-4923-a100-adbd9e0a0a0d}" Name="BodyAndMore" />
+			<FieldRef ID="{9c4be348-663a-4172-a38a-9714b2634c17}" Name="FullBody" />
+			<FieldRef ID="{61b97279-cbc0-4aa9-a362-f1ff249c1706}" Name="LimitedBody" />
+			<FieldRef ID="{fb6c2494-1b14-49b0-a7ca-0506d6e85a62}" Name="MoreLink" />
+			<FieldRef ID="{076193bd-865b-4de7-9633-1f12069a6fff}" Name="LessLink" />
+			<FieldRef ID="{58ca6516-51cd-41fb-a908-dd2a4aeea8bc}" Name="Threading" />
+			<FieldRef ID="{078b9dba-eb8c-4ec5-bfdd-8d220a3fcc5d}" Name="MyEditor" />
+			<FieldRef ID="{adfe65ee-74bb-4771-bec5-d691d9a6a14e}" Name="PersonImage" />
+			<FieldRef ID="{b4ab471e-0262-462a-8b3f-c1dfc9e2d5fd}" Name="PersonViewMinimal" />
+			<FieldRef ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" Name="LinkTitleNoMenu" Hidden="TRUE" />
+			<FieldRef ID="{4ce600fb-a927-4911-bfc1-11076b76b522}" Name="EmailSender" />
+			<FieldRef ID="{4753e73b-5b5d-4bbc-8e09-c9683b0d40a7}" Name="ShortestThreadIndex" />
+			<FieldRef ID="{2bec4782-695f-406d-9e50-f1d39a2b8eb6}" Name="ShortestThreadIndexId" />
+			<FieldRef ID="{8ffccefe-998b-4896-a6df-32d566f69141}" Name="ShortestThreadIndexLookup" />
+			<FieldRef ID="{bd2216c1-a2f3-48c0-b21c-dc297d0cc658}" Name="IsRootPost" />
+			<FieldRef ID="{ff90fecb-7f46-44f5-9698-db44a81b2a8b}" Name="ParentItemEditor" />
+			<FieldRef ID="{7d014138-1886-41f0-834f-ba9f4e72f33b}" Name="ParentItemID" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>ListForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

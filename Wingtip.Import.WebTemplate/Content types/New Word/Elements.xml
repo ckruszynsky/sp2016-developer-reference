@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x010018F21907ED4E401CB4F14422ABC65304" Name="New Word" Group="Group Work Content Types" Description="Add a New Word to this list." Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/New Word" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" />
+			<FieldRef ID="{90244050-709c-4837-9316-93863fbd3da6}" Name="IMEDisplay" Required="TRUE" />
+			<FieldRef ID="{d2433b20-3f02-4432-817d-369f104a2dcd}" Name="IMEComment1" />
+			<FieldRef ID="{e2c93917-cf32-4b29-be5c-d71f1bac7714}" Name="IMEComment2" />
+			<FieldRef ID="{7c52f61a-e1e0-4341-9e2f-9b36cddfdd7c}" Name="IMEComment3" />
+			<FieldRef ID="{84b0fe85-6b16-40c3-8507-e56c5bbc482e}" Name="IMEUrl" />
+			<FieldRef ID="{f3cdbcfd-f456-45f4-9000-b6f34bb95d84}" Name="IMEPos" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>ListForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

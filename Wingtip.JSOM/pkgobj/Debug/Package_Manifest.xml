@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="fac7358a-32d6-4c6b-98db-65eba7ecef27" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="Wingtip.JSOM.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\Wingtip.JSOM\ECMAScript.aspx" />
+    <TemplateFile Location="Layouts\Wingtip.JSOM\JQueryExample.aspx" />
+    <TemplateFile Location="Layouts\Wingtip.JSOM\Scripts\jquery-1.8.3.min.js" />
+    <TemplateFile Location="Layouts\Wingtip.JSOM\Scripts\jquery-ui.css" />
+    <TemplateFile Location="Layouts\Wingtip.JSOM\Scripts\jquery-ui.min.js" />
+    <TemplateFile Location="Layouts\Wingtip.JSOM\Scripts\MicrosoftAjax.js" />
+  </TemplateFiles>
+</Solution>

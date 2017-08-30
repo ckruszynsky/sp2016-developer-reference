@@ -1,0 +1,2 @@
+obj\Debug\Workflow.g.xaml
+obj\Debug\Wingtip.WF.SP.WorkflowApp.OrdersWorkflow_Workflow_BeforeInitializeComponentHelper.txt

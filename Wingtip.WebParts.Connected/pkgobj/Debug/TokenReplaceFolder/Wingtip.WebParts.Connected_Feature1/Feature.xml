@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="399b5009-33c8-4fdd-a14d-1e01e7fa0180" Scope="Site" Title="Wingtip.WebParts.Connected Feature">
+  <ElementManifests>
+    <ElementManifest Location="ProductsWebPart\Elements.xml" />
+    <ElementFile Location="ProductsWebPart\ProductsWebPart.webpart" />
+    <ElementManifest Location="CategoriesWebPart\Elements.xml" />
+    <ElementFile Location="CategoriesWebPart\CategoriesWebPart.webpart" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+ RegistrationType="ContentType"
+ RegistrationId="0x010100DFCFE30E0795465F8973EF29B73F1551"
+ Id="Wingtip.CustomActions.Invoices.SampleRibbonCommand"
+ Location="CommandUI.Ribbon.ListView">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Documents.Manage.Controls._children">
+          <Button Id="SampleRibbonCommand"
+                  Alt="Shows an alert."
+                  Description="Shows an alert, just to make an example."
+                  Sequence="25"
+                  Command="ShowSampleAlert"
+                  Image16by16="/_layouts/15/images/Wingtip.UI.Extensions/Baloon_16x16.png"
+                  Image32by32="/_layouts/15/images/Wingtip.UI.Extensions/Baloon_32x32.png"
+                  LabelText="Show Alert"
+                  TemplateAlias="o1" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="ShowSampleAlert"
+                          CommandAction="javascript:
+                      window.alert('This an alert from the ribbon');" />
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+  <CustomAction
+  RegistrationType="ContentType"
+  RegistrationId="0x010100DFCFE30E0795465F8973EF29B73F1551"
+  Id="Wingtip.CustomActions.Invoices.ArchiveRibbon"
+  Location="CommandUI.Ribbon.ListView">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+          Location="Ribbon.Documents.EditCheckout.Controls._children">
+          <Button Id="InvoiceArchiveRibbonButton"
+                  Alt="Changes the status of the Invoice to Archived."
+                  Description="Change the status of the Invoice to Archived."
+                  Sequence="25"
+                  Command="ChangeInvoiceStatusToArchived"
+                  Image16by16="/_layouts/15/images/Wingtip.UI.Extensions/IconArchive_16x16.png"
+                  Image32by32="/_layouts/15/images/Wingtip.UI.Extensions/IconArchive_32x32.png"
+                  LabelText="Archive Invoices"
+                  TemplateAlias="o1" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler Command="ChangeInvoiceStatusToArchived"
+                          EnabledScript="javascript:
+                            function checkInvoicesSelected() {
+                              // Check the number of selected items
+                              var items =
+                                SP.ListOperation.Selection.getSelectedItems();
+                              return (items.length >= 1);
+                            }
+                            checkInvoicesSelected();"
+                          CommandAction="javascript:
+                            // Shared variables
+                            var ctx;
+                            var itemsToArchive;
+                            var notifyId = '';
+
+                            // Function that archives the selected items
+                            function archiveInvoices() {
+
+                              // Notify the end user about the work in progress
+                              this.notifyId =
+                                SP.UI.Notify.addNotification(
+                                  'Archiving items...', true);
+
+                              // Get the current ClientContext
+                              this.ctx = new SP.ClientContext.get_current();
+
+                              // Get the current Web
+                              var web = this.ctx.get_web();
+
+                              // Get the currently selected list
+                              var listId =
+                                SP.ListOperation.Selection.getSelectedList();
+                              var sourceList = web.get_lists().getById(listId);
+
+                              // Get the selected items and archive each of them
+                              var items =
+                                SP.ListOperation.Selection.getSelectedItems(
+                                  this.ctx);
+
+                              var item;
+                              this.itemsToArchive = new Array(items.length);
+                              for(var i in items) {
+                                item = items[i];
+
+                                // Get each selected item
+                                var listItem = sourceList.getItemById(item.id);
+                                this.itemsToArchive.push(listItem);
+                                this.ctx.load(listItem);
+                              }
+
+                              // Effectively load items from SharePoint
+                              this.ctx.executeQueryAsync(
+                                Function.createDelegate(this, onQuerySucceeded),
+                                Function.createDelegate(this, onQueryFailed));
+                            }
+
+                            // Delegate called when server
+                            // operation is completed upon success
+                            function onQuerySucceeded(sender, args) {
+                              // Mark each item as Archived
+                              var item = null;
+                              do {
+                                item = this.itemsToArchive.pop();
+                                if (item != null) {
+                                  item.set_item('WingtipInvoiceStatus', 'Archived');
+                                  item.update();
+                                }
+                              } while (item != null);
+
+                              // Effectively update items in SharePoint
+                              this.ctx.executeQueryAsync(
+                              Function.createDelegate(this, onUpdateSucceeded),
+                              Function.createDelegate(this, onQueryFailed));
+                            }
+
+                            // Delegate called when server
+                            // operation is completed upon success
+                            function onUpdateSucceeded(sender, args) {
+                              SP.UI.Notify.removeNotification(this.notifyId);
+                              SP.UI.ModalDialog.RefreshPage(SP.UI.DialogResult.OK);
+                            }
+
+                            // Delegate called when server
+                            // operation is completed with errors
+                            function onQueryFailed(sender, args) {
+                              alert('The requested operation failed: ' +
+                                args.toString());
+                            }
+                            archiveInvoices();" />
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+
+  <CustomAction
+  RegistrationType="ContentType"
+  RegistrationId="0x010100DFCFE30E0795465F8973EF29B73F1551"
+  Id="Wingtip.CustomActions.Invoices.Tab"
+  Location="CommandUI.Ribbon.ListView">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+          Location="Ribbon.Tabs._children">
+          <Tab
+            Id="Wingtip.CustomActions.Invoices.Tab.One"
+            Title="Invoices"
+            Description="This tab holds custom commands for Invoices."
+            Sequence="1000">
+            <Scaling
+              Id="Wingtip.CustomActions.Invoices.Tab.One.Scaling">
+              <MaxSize
+                Id="Wingtip.CustomActions.Invoices.Tab.One.Scaling.MaxSize"
+                GroupId="Wingtip.CustomActions.Invoices.Tab.One.GroupOne"
+                Size="OneLargeTwoSmall"/>
+              <Scale
+                Id="Wingtip.CustomActions.Invoices.Tab.One.Scaling.Scale"
+                GroupId="Wingtip.CustomActions.Invoices.Tab.One.GroupOne"
+                Size="OneLargeTwoSmall" />
+            </Scaling>
+            <Groups Id="Wingtip.CustomActions.Invoices.Tab.Groups">
+              <Group
+                Id="Wingtip.CustomActions.Invoices.Tab.One.GroupOne"
+                Description="This is the first group."
+                Title="First Group"
+                Sequence="52"
+                Template="Wingtip.CustomActions.Invoices.RibbonTemplate">
+                <Controls Id="Ribbon.CustomTabExample.CustomGroupExample.Controls">
+                  <Button
+                    Id="Wingtip.CustomActions.Invoices.Tab.One.ButtonOne"
+                    Command="ButtonOneCommand"
+                    Sequence="10"
+                    Description="First sample command."
+                    Image32by32="/_layouts/15/$Resources:core,Language;/images/formatmap32x32.png"
+                    Image32by32Left="-68"
+                    Image32by32Top="-272"
+                    LabelText="First sample command!"
+                    TemplateAlias="customOne"/>
+                  <Button
+                    Id="Wingtip.CustomActions.Invoices.Tab.One.ButtonTwo"
+                    Command="ButtonTwoCommand"
+                    Sequence="20"
+                    Description="Second sample command."
+                    Image16by16="/_layouts/15/$Resources:core,Language;/images/formatmap16x16.png"
+                    Image16by16Left="-169"
+                    Image16by16Top="-38"
+                    LabelText="Second sample command!"
+                    TemplateAlias="customTwo"/>
+                  <Button
+                    Id="Wingtip.CustomActions.Invoices.Tab.One.ButtonThree"
+                    Command="ButtonThreeCommand"
+                    Sequence="30"
+                    Description="Third sample command."
+                    Image16by16="/_layouts/15/$Resources:core,Language;/images/formatmap16x16.png"
+                    Image16by16Left="-162"
+                    Image16by16Top="-234"
+                    LabelText="Third sample command!"
+                    TemplateAlias="customThree"/>
+                </Controls>
+              </Group>
+            </Groups>
+          </Tab>
+        </CommandUIDefinition>
+        <CommandUIDefinition Location="Ribbon.Templates._children">
+          <GroupTemplate Id="Wingtip.CustomActions.Invoices.RibbonTemplate">
+            <Layout
+              Title="OneLargeTwoSmall"
+              LayoutTitle="OneLargeTwoSmall">
+              <Section Alignment="Top" Type="OneRow">
+                <Row>
+                  <ControlRef DisplayMode="Large" TemplateAlias="customOne" />
+                </Row>
+              </Section>
+              <Section Alignment="Top" Type="TwoRow">
+                <Row>
+                  <ControlRef DisplayMode="Small" TemplateAlias="customTwo" />
+                </Row>
+                <Row>
+                  <ControlRef DisplayMode="Small" TemplateAlias="customThree" />
+                </Row>
+              </Section>
+            </Layout>
+          </GroupTemplate>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler
+          Command="ButtonOneCommand"
+          CommandAction="javascript:window.alert('You pressed CommandOne!');" />
+        <CommandUIHandler
+          Command="ButtonTwoCommand"
+          CommandAction="javascript:window.alert('You pressed CommandTwo!');" />
+        <CommandUIHandler
+          Command="ButtonThreeCommand"
+          CommandAction="javascript:window.alert('You pressed CommandThree!');" />
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+</Elements>

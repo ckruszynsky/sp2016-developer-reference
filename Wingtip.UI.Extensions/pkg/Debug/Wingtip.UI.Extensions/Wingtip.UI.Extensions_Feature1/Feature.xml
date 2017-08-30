@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="c2e94983-4839-4664-a969-63acda9c070b" Scope="Web" Title="Wingtip.UI.Extensions Feature1">
+  <ElementManifests>
+    <ElementManifest Location="WingtipInvoice\Elements.xml" />
+    <ElementManifest Location="WingtipInvoiceRibbons\Elements.xml" />
+    <ElementManifest Location="WingtipInvoicesInstance\Elements.xml" />
+    <ElementManifest Location="WingtipInvoices\Elements.xml" />
+    <ElementFile Location="WingtipInvoices\Schema.xml" />
+    <ElementFile Location="WingtipInvoices\EditDlg.htm" />
+    <ElementFile Location="WingtipInvoices\FileDlg.htm" />
+    <ElementFile Location="WingtipInvoices\Repair.aspx" />
+    <ElementFile Location="WingtipInvoices\Upload.aspx" />
+    <ElementManifest Location="WingtipInvoicesCustomActions\Elements.xml" />
+    <ElementManifest Location="WingtipInvoiceSiteSettingsGroupAction\Elements.xml" />
+    <ElementManifest Location="NotificationAndStatusRibbonSample\Elements.xml" />
+  </ElementManifests>
+</Feature>

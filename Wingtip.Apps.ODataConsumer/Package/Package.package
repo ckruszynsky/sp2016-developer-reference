@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="6d2a7c8c-4026-497f-b9d2-a39d818c7862" 
+        solutionId="6d2a7c8c-4026-497f-b9d2-a39d818c7862" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Wingtip.Apps.ODataConsumer"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="b91b7ece-3ce2-4e89-86d0-602f168e6608" />
+  </features>
+</package>

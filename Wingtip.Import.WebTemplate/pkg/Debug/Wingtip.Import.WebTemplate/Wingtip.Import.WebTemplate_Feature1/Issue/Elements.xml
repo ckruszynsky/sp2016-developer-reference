@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0103" Name="Issue" Group="List Content Types" Description="Track an issue or problem." Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Issue" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+			<FieldRef ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" />
+			<FieldRef ID="{3f277a5c-c7ae-4bbe-9d44-0456fb548f94}" Name="IssueStatus" />
+			<FieldRef ID="{a8eb573e-9e11-481a-a8c9-1104a54b2fbd}" Name="Priority" />
+			<FieldRef ID="{6df9bd52-550e-4a30-bc31-a4366832a87f}" Name="Comment" />
+			<FieldRef ID="{6df9bd52-550e-4a30-bc31-a4366832a87d}" Name="Category" />
+			<FieldRef ID="{875fab27-6e95-463b-a4a6-82544f1027fb}" Name="RelatedIssues" />
+			<FieldRef ID="{6df9bd52-550e-4a30-bc31-a4366832a87e}" Name="V3Comments" />
+			<FieldRef ID="{cd21b4c2-6841-4f9e-a23a-738a65f99889}" Name="DueDate" />
+			<FieldRef ID="{03f89857-27c9-4b58-aaab-620647deda9b}" Name="LinkIssueIDNoMenu" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>ListForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

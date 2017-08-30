@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="96898661-3247-4f98-ab21-fc875c27a4c6" Scope="Site" Title="Wingtip.WebParts Feature1">
+  <ElementManifests>
+    <ElementManifest Location="HelloWorldWebPart\Elements.xml" />
+    <ElementFile Location="HelloWorldWebPart\HelloWorldWebPart.webpart" />
+    <ElementManifest Location="CreateRequestForContactWebPart\Elements.xml" />
+    <ElementFile Location="CreateRequestForContactWebPart\CreateRequestForContactWebPart.webpart" />
+  </ElementManifests>
+</Feature>

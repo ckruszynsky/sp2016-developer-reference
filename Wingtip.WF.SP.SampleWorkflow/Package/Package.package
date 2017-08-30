@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="84928efb-9d2e-4881-9da2-72fe75c09f81" solutionId="84928efb-9d2e-4881-9da2-72fe75c09f81" resetWebServer="false" sharePointProductVersion="16.0" name="Wingtip.WF.SP.SampleWorkflow" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="41f144ab-1d2c-4c33-b952-6a5493614496" />
+    <featureReference itemId="b460fddc-c34b-4bf9-b0ea-b3b96c2c71a5" />
+  </features>
+</package>

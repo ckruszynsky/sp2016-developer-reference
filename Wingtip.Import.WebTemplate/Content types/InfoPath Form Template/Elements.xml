@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x010100F8EF98760CBA4A94994F13BA881038FA" Name="InfoPath Form Template" Group="_Hidden" Description="A Microsoft InfoPath Form Template." Hidden="TRUE" Overwrite="TRUE" FeatureId="{c88c4ff1-dbf5-4649-ad9f-c6c426ebcbf5}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/InfoPath Form Template" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{5f47e085-2150-41dc-b661-442f3027f552}" Name="SelectFilename" />
+			<FieldRef ID="{8553196d-ec8d-4564-9861-3dbe931050c8}" Name="FileLeafRef" Required="TRUE" />
+			<FieldRef ID="{8c06beca-0777-48f7-91c7-6da68bc07b69}" Name="Created" Hidden="TRUE" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="FALSE" ShowInNewForm="FALSE" ShowInEditForm="TRUE" />
+			<FieldRef ID="{28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f}" Name="Modified" Hidden="TRUE" />
+			<FieldRef ID="{822c78e3-1ea9-4943-b449-57863ad33ca9}" Name="Modified_x0020_By" Hidden="FALSE" />
+			<FieldRef ID="{4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb}" Name="Created_x0020_By" Hidden="FALSE" />
+			<FieldRef ID="{66b691cf-07a3-4ca6-ac6d-27fa969c8569}" Name="FormName" Required="FALSE" />
+			<FieldRef ID="{65572d4d-445a-43f1-9c77-3358222a2c93}" Name="FormCategory" Required="FALSE" />
+			<FieldRef ID="{94ad6f7c-09a1-42ca-974f-d24e080160c2}" Name="FormVersion" Required="FALSE" />
+			<FieldRef ID="{1a03fa74-8c63-40cc-bd06-73b580bd8744}" Name="FormId" Required="FALSE" />
+			<FieldRef ID="{96c27c9d-33f5-4f8e-893e-684014bc7090}" Name="FormLocale" Required="FALSE" />
+			<FieldRef ID="{1fff255c-6c88-4a76-957b-ae24bf07b78c}" Name="FormDescription" Required="FALSE" />
+			<FieldRef ID="{58eb8694-8bd6-4f98-8097-374bd97ffec4}" Name="CusomContentTypeId" Required="FALSE" />
+			<FieldRef ID="{4ef69ca4-4179-4d27-9e6c-f9544d45dfdc}" Name="ShowInCatalog" Required="FALSE" />
+			<FieldRef ID="{1a03fa74-8c63-40cc-bd06-73b580bd8743}" Name="LinkTemplateName" Required="FALSE" />
+		</FieldRefs>
+		<DocumentTemplate TargetName="" />
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>DocumentLibraryForm</Display>
+					<Edit>DocumentLibraryForm</Edit>
+					<New>DocumentLibraryForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

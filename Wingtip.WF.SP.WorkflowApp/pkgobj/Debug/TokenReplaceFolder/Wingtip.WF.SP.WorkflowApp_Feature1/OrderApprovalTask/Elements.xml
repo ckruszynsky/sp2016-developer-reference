@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Field ID="{919DEB5B-FB24-49B8-93E1-0EDE24947F9F}"
+       Name="OrderApprovalOutcome"
+       StaticName="OrderApprovalOutcome"
+       DisplayName="OrderApprovalOutcome"
+       Type="OutcomeChoice"
+       Required="FALSE"
+       Group="DevLeap Site Columns">
+    <CHOICES>
+      <CHOICE>Approved</CHOICE>
+      <CHOICE>Rejected</CHOICE>
+      <CHOICE>To Review</CHOICE>
+    </CHOICES>
+  </Field>
+
+  <!-- Parent ContentType: Workflow Task (SharePoint 2013) (0x0108003365C4474CAE8C42BCE396314E88E51F) -->
+  <ContentType ID="0x0108003365C4474CAE8C42BCE396314E88E51F007B815983D391454AA1958C668FC7C058"
+               Name="OrderApprovalTask"
+               Group="Wingtip Content Types"
+               Description="Orders Approval Content Type"
+               Inherits="FALSE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{919DEB5B-FB24-49B8-93E1-0EDE24947F9F}" Name="OrderApprovalOutcome" />
+    </FieldRefs>
+
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+        <FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+          <Display>Pages/OrderApprovalTaskForm.aspx</Display>
+          <Edit>Pages/OrderApprovalTaskForm.aspx</Edit>
+        </FormUrls>
+      </XmlDocument>
+    </XmlDocuments>
+
+  </ContentType>
+</Elements>

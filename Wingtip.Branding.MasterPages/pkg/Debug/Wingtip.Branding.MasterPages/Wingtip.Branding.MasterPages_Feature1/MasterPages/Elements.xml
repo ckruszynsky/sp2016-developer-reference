@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="MasterPages" List="116" Url="_catalogs/masterpage" RootWebOnly="TRUE">
+    <File Path="MasterPages\WingtipTeam.master" Url="MasterPages/WingtipTeam.master" Type="GhostableInLibrary" ReplaceContent="TRUE" Level="Published"/>
+  </Module>
+</Elements>

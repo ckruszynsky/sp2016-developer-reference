@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0100FBEEE6F0C500489B99CDA6BB16C398F7" Name="Users" Group="Group Work Content Types" Description="Add new users to this list." Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Users" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="FALSE" Hidden="TRUE" />
+			<FieldRef ID="{bfc6f32c-668c-43c4-a903-847cca2f9b3c}" Name="Name" Required="TRUE" />
+			<FieldRef ID="{e2a07293-596a-4c59-9089-5c4f9339077f}" Name="Whereabout" Required="TRUE" />
+			<FieldRef ID="{4cd541b9-c8ee-468f-bee6-33f3b9baa722}" Name="From" />
+			<FieldRef ID="{6570d35e-7f0a-4123-93c9-f53ffa5810d3}" Name="GoFromHome" />
+			<FieldRef ID="{fe3344ab-b468-471f-8fa5-9b506c7d1557}" Name="Until" />
+			<FieldRef ID="{2ead592e-f05c-41a2-9817-e06dac25bc19}" Name="GoingHome" />
+			<FieldRef ID="{e1a85174-b8d0-4962-9ce6-758f8b612725}" Name="ContactInfo" />
+			<FieldRef ID="{6df9bd52-550e-4a30-bc31-a4366832a87f}" Name="Comment" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Edit>GroupBoardWhereaboutsEditForm</Edit>
+					<New>GroupBoardWhereaboutsNewForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

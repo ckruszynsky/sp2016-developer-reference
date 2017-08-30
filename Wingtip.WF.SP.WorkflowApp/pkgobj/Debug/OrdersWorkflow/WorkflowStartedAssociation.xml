@@ -1,0 +1,10 @@
+﻿<WorkflowAssociation xmlns="http://schemas.microsoft.com/sharepoint/2012/app/workflow">
+  <Description>OrdersWorkflow - WorkflowStart</Description>
+  <DisplayName>OrdersWorkflow - WorkflowStart</DisplayName>
+  <Enabled>true</Enabled>
+  <EventSourceGUID>Lists/Orders</EventSourceGUID>
+  <EventType>WorkflowStart</EventType>
+  <HistoryListId>Lists/WorkflowHistoryList</HistoryListId>
+  <Id>afb9d5d2-91d0-4dfd-9c45-2bbafb4ca002</Id>
+  <TaskListId>Lists/WorkflowTaskList</TaskListId>
+</WorkflowAssociation>

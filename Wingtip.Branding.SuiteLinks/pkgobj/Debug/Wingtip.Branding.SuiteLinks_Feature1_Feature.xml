@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" AlwaysForceInstall="TRUE" Id="461d8ee7-8c92-455e-b12f-f2b47acdf220" Scope="Farm" Title="Wingtip.Branding.SuiteLinks Feature1">
+  <ElementManifests>
+    <ElementManifest Location="Element\Elements.xml" />
+  </ElementManifests>
+</Feature>

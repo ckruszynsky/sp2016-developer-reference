@@ -1,0 +1,202 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="Wingtip.WF.SP.WorkflowApp.OrdersWorkflow.Workflow"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
+ xmlns:msdad="clr-namespace:Microsoft.SharePoint.DesignTime.Activities.Design;assembly=Microsoft.SharePoint.DesignTime.Activities.16.0.Design"
+ xmlns:p="wf://workflow.windows.net/$Activities"
+ xmlns:p1="http://schemas.microsoft.com/workflow/2012/07/xaml/activities"
+ xmlns:s="clr-namespace:System;assembly=mscorlib"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="TargetApprover" Type="InArgument(x:String)" />
+    <x:Property Name="ApprovalRequestMessage" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap2010:WorkflowViewState.IdRef>Wingtip.WF.SP.WorkflowApp.OrdersWorkflow.Workflow_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>Microsoft.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.SharePoint.DesignTime.Activities.16.0</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>Microsoft.SharePoint.DesignTime.Activities.16.0.Design</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>Wingtip.WF.SP.WorkflowApp</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart sap2010:WorkflowViewState.IdRef="Flowchart_2">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="ApprovalTaskOutcome" />
+      <Variable x:TypeArguments="x:Int32" Name="ApprovalTaskId" />
+    </Flowchart.Variables>
+    <Flowchart.StartNode>
+      <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+        <p:SingleTask TaskId="{x:Null}" AssignmentEmailBody="&lt;html&gt;&lt;body style='font-size:11pt;font-family:Segoe UI Light,sans-serif;color:#444444;'&gt;&lt;div&gt;&lt;span style='font-size:13.5pt'&gt;You have a new task.&lt;/span&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" AssignmentEmailSubject="Task Assigned" CancelationEmailBody="&lt;html&gt;&lt;body style='font-size:11pt;font-family:Segoe UI Light,sans-serif;color:#444444;'&gt;&lt;div&gt;&lt;span style='font-size:13.5pt'&gt;One of your tasks was canceled and deleted. You do not need to take any further action on that task.&lt;/span&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" CancelationEmailSubject="Task Canceled" CompletedStatus="Completed" ContentTypeId="0x0108003365C4474CAE8C42BCE396314E88E51F007B815983D391454AA1958C668FC7C058" DefaultTaskOutcome="2" sap2010:WorkflowViewState.IdRef="SingleTask_2" OutcomeFieldName="OrderApprovalOutcome" OverdueEmailBody="&lt;html&gt;&lt;body style='font-size:11pt;font-family:Segoe UI Light,sans-serif;color:#444444;'&gt;&lt;div&gt;&lt;span style='font-size:13.5pt'&gt;You have an &lt;/span&gt;&lt;span style='font-size:13.5pt;color:#ff3b3b;'&gt;overdue&lt;/span&gt;&lt;span style='font-size:13.5pt'&gt; task.&lt;/span&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" OverdueEmailSubject="Task Overdue" OverdueReminderRepeat="1" OverdueRepeatTimes="1" PreserveIncompleteTasks="False" SendReminderEmail="True" Title="Workflow task" WaitForTaskCompletion="True" WaiveAssignmentEmail="False" WaiveCancelationEmail="False">
+          <p:SingleTask.AssignedTo>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">TargetApprover</mca:CSharpValue>
+            </InArgument>
+          </p:SingleTask.AssignedTo>
+          <p:SingleTask.Body>
+            <InArgument x:TypeArguments="x:String">
+              <mca:CSharpValue x:TypeArguments="x:String">ApprovalRequestMessage</mca:CSharpValue>
+            </InArgument>
+          </p:SingleTask.Body>
+          <p:SingleTask.DueDate>
+            <InArgument x:TypeArguments="s:DateTime">
+              <mca:CSharpValue x:TypeArguments="s:DateTime">DateTime.UtcNow.AddDays(5)</mca:CSharpValue>
+            </InArgument>
+          </p:SingleTask.DueDate>
+          <p:SingleTask.Outcome>
+            <OutArgument x:TypeArguments="x:Int32">
+              <mca:CSharpReference x:TypeArguments="x:Int32">ApprovalTaskOutcome</mca:CSharpReference>
+            </OutArgument>
+          </p:SingleTask.Outcome>
+          <p:SingleTask.RelatedContentLinkListId>
+            <InArgument x:TypeArguments="s:Guid">
+              <p1:ExpressionContainerValue x:TypeArguments="s:Guid">
+                <p:GetCurrentListId />
+              </p1:ExpressionContainerValue>
+            </InArgument>
+          </p:SingleTask.RelatedContentLinkListId>
+          <p:SingleTask.RelatedContentLinkListItemId>
+            <InArgument x:TypeArguments="s:Guid">
+              <p1:ExpressionContainerValue x:TypeArguments="s:Guid">
+                <p:GetCurrentItemGuid />
+              </p1:ExpressionContainerValue>
+            </InArgument>
+          </p:SingleTask.RelatedContentLinkListItemId>
+          <p:SingleTask.RelatedContentLinkListItemIntegerId>
+            <InArgument x:TypeArguments="x:Int32">
+              <p1:ExpressionContainerValue x:TypeArguments="x:Int32">
+                <p:GetCurrentItemId />
+              </p1:ExpressionContainerValue>
+            </InArgument>
+          </p:SingleTask.RelatedContentLinkListItemIntegerId>
+          <p:SingleTask.TaskItemId>
+            <OutArgument x:TypeArguments="x:Int32">
+              <mca:CSharpReference x:TypeArguments="x:Int32">ApprovalTaskId</mca:CSharpReference>
+            </OutArgument>
+          </p:SingleTask.TaskItemId>
+        </p:SingleTask>
+        <FlowStep.Next>
+          <FlowSwitch x:TypeArguments="x:Int32" x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_1">
+            <FlowSwitch.Default>
+              <FlowStep x:Name="__ReferenceID2" sap2010:WorkflowViewState.IdRef="FlowStep_3">
+                <p:WriteToHistory DisplayName="WriteRejected" sap2010:WorkflowViewState.IdRef="WriteToHistory_3" Message="Task Rejected" />
+              </FlowStep>
+            </FlowSwitch.Default>
+            <FlowSwitch.Expression>
+              <mca:CSharpValue x:TypeArguments="x:Int32">ApprovalTaskOutcome</mca:CSharpValue>
+            </FlowSwitch.Expression>
+            <FlowStep x:Key="0" x:Name="__ReferenceID3" sap2010:WorkflowViewState.IdRef="FlowStep_4">
+              <p:WriteToHistory DisplayName="Write Approved" sap2010:WorkflowViewState.IdRef="WriteToHistory_4" Message="Task Approved" />
+            </FlowStep>
+          </FlowSwitch>
+        </FlowStep.Next>
+      </FlowStep>
+    </Flowchart.StartNode>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <x:Reference>__ReferenceID2</x:Reference>
+    <x:Reference>__ReferenceID3</x:Reference>
+    <sads:DebugSymbol.Symbol>d3tDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERvY3VtZW50c1xWaXN1YWwgU3R1ZGlvIDIwMTVcUHJvamVjdHNcV2luZ1RpcFxXaW5ndGlwLldGLlNQLldvcmtmbG93QXBwXE9yZGVyc1dvcmtmbG93XFdvcmtmbG93LnhhbWwkMQN+DwIBATgJZxgCAQtwD3BfAgEGbBFsjAECAQRzD3OLAQIBAjg9OJoCAgE5OPsGOJEHAgE4OMkKOMwKAgE3ONcCOIQFAgE2OM4LONULAgE1Tw9RLQIBNDi3Bji6BgIBMzjsCzjzCwIBMjjlCjjsCgIBMUAPQGMCASxKD0pnAgEnOL0FOMgFAgEmOP8KOIULAgElVg9YLQIBJEUPRWkCAR84jQo4mwoCAR5dD18tAgEdOIwLOJsLAgEcOKMHOPgJAgEbONcFOKMGAgEaOw87WwIBFWQPZGICARA4sgs4uAsCAQ84sgI4wQICAQ44nQU4rAUCAQ04sgo4tQoCAQxsemyJAQIBBXN5c4gBAgEDUBFQJwMBNAFXEVcpAwEkAV4RXicDAR0B</sads:DebugSymbol.Symbol>
+  </Flowchart>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="SingleTask_2" sap:VirtualizedContainerService.HintSize="200,89">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <scg:Dictionary x:TypeArguments="x:String, msdad:ViewStateNameValue" x:Key="SPLocalizedDisplayNames">
+              <msdad:ViewStateNameValue x:Key="ContentTypeId" DisplayName="OrderApprovalTask" Value="0x0108003365C4474CAE8C42BCE396314E88E51F007B815983D391454AA1958C668FC7C058" />
+            </scg:Dictionary>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="WriteToHistory_3" sap:VirtualizedContainerService.HintSize="200,68">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowStep_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">0,376</av:Point>
+            <av:Size x:Key="ShapeSize">200,68</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="WriteToHistory_4" sap:VirtualizedContainerService.HintSize="200,68">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowStep_4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">390,376</av:Point>
+            <av:Size x:Key="ShapeSize">200,68</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowSwitch`1_1" sap:VirtualizedContainerService.HintSize="70,87">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <av:Point x:Key="ShapeLocation">265,286.5</av:Point>
+            <av:Size x:Key="ShapeSize">70,87</av:Size>
+            <av:PointCollection x:Key="Default">265,330 100,330 100,376</av:PointCollection>
+            <av:PointCollection x:Key="0Connector">335,330 490,330 490,376</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="FlowStep_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">200,135.5</av:Point>
+            <av:Size x:Key="ShapeSize">200,89</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">300,224.5 300,286.5</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Flowchart_2" sap:VirtualizedContainerService.HintSize="614,636">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+            <av:Size x:Key="ShapeSize">60,75</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,135.5</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="Wingtip.WF.SP.WorkflowApp.OrdersWorkflow.Workflow_1" sap:VirtualizedContainerService.HintSize="654,716" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>

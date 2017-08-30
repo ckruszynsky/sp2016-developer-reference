@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x010085EC78BE64F9478AAE3ED069093B9963" Name="Project Policy" Group="_Hidden" Description="Container content type for Project Policy definitions" Sealed="TRUE" ReadOnly="TRUE" Overwrite="TRUE" FeatureId="{2fcd5f8a-26b7-4a6a-9755-918566dba90a}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Project Policy" />
+		<FieldRefs />
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>ListForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

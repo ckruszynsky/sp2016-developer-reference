@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<minimalLanguageDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SampleCRMModel">
+  <modelRootMoniker Name="/SampleCRMModel" />
+  <nestedChildShapes>
+    <entityShape Id="2d36db82-9485-45f3-862e-f1c531d90976" absoluteBounds="5.25, 1.25, 1.5, 1.787985026041667">
+      <entityMoniker name="Wingtip.BCS.CRM.SampleCRMModel.Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e247865-767f-4043-baea-fe252866f0e9" absoluteBounds="5.265, 1.6600000000000001, 1.4700000000000002, 0.44169108072916663" name="Identifiers" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="46be79c4-df6e-4e6a-a0b7-da035180fa41" absoluteBounds="5.265, 2.1116910807291669, 1.4700000000000002, 0.8262939453125" name="Methods" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+  </nestedChildShapes>
+</minimalLanguageDiagram>

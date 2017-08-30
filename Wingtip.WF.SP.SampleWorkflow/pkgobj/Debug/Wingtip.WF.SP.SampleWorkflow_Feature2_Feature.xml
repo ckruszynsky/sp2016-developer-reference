@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="54078d98-0254-4405-8f95-23bfdad0613c" Scope="Web" Title="Wingtip.WF.SP.SampleWorkflow Feature2">
+  <ElementManifests>
+    <ElementManifest Location="WorkflowHistoryList\Elements.xml" />
+    <ElementManifest Location="WorkflowTaskList\Elements.xml" />
+  </ElementManifests>
+</Feature>

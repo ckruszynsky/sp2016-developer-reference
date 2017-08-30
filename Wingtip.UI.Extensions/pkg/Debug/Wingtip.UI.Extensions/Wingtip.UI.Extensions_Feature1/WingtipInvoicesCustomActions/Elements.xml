@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+      Location="EditControlBlock"
+      RegistrationType="ContentType"
+      RegistrationId="0x010100DFCFE30E0795465F8973EF29B73F1551"
+      Id="Wingtip.CustomActions.Invoices.Archive"
+      Title="Archive Invoice"
+      Rights="ViewListItems,EditListItems"
+      Description="Archive this invoice">
+    <UrlAction Url="~site/_layouts/Wingtip.UI.Extensions/WingtipInvoiceChangeStatus.aspx?ItemId={ItemId}&amp;ListId={ListId}&amp;Status=Archived"/>
+  </CustomAction>
+  
+</Elements>

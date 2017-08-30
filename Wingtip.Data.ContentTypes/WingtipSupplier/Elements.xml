@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Site Colums specific for the WingtipCustomer Content Type -->
+  <Field
+    ID="{A73DE518-B9B9-4e8d-9D94-6099B4603997}"
+    Name="WingtipSupplierAccount"
+    StaticName="WingtipSupplierAccount"
+    DisplayName="Supplier Account"
+    Type="User"
+    Group="Wingtip Columns"
+    Sortable="TRUE" />
+  
+  
+  <!-- Parent ContentType: WingtipContact (Wingtip.Data.ContentTypes\WingtipContact) (0x0100D654C9A8BF564992A0E65F8ACB0D4B66) -->
+  <ContentType ID="0x0100D654C9A8BF564992A0E65F8ACB0D4B66009FBA6CDECBAC4F5D81ECC7433A3F5A83"
+               Name="WingtipSupplier"
+               Group="Wingtip Content Types"
+               Description="Supplier of Wingtip"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef
+         ID="{A73DE518-B9B9-4e8d-9D94-6099B4603997}"
+         Name="WingtipSupplierAccount"
+         Required="TRUE" />    
+    </FieldRefs>
+  </ContentType>
+</Elements>

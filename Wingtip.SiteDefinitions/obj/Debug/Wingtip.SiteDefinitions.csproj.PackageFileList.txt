@@ -1,0 +1,1 @@
+bin\Debug\Wingtip.SiteDefinitions.wsp

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="5300947e-d7c1-4eaa-88a7-9a3ec8c7a169" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="Wingtip.WebParts.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="Wingtip.WebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0a28255954d10b23" Namespace="Wingtip.WebParts.HelloWorldWebPart" TypeName="*" />
+        <SafeControl Assembly="Wingtip.WebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0a28255954d10b23" Namespace="Wingtip.WebParts.CreateRequestForContactWebPart" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="Wingtip.WebParts_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

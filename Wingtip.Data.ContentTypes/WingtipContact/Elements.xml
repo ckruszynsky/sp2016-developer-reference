@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Site Columns used by the Content type-->
+  <Field
+    ID="{C7792AD6-F2F3-4f2d-A7E5-75D5A8206FD9}"
+    Name="WingtipContactID"
+    StaticName="WingtipContactID"
+    DisplayName="Contact ID"
+    Type="Text"
+    Group="Wingtip Columns"
+    Sortable="TRUE" />
+  <Field
+    ID="{A8F24550-55CD-4d34-A015-811954C6CE24}"
+    Name="WingtipCompanyName"
+    StaticName="WingtipCompanyName"
+    DisplayName="Company Name"
+    Type="Text"
+    Group="Wingtip Columns"
+    Sortable="TRUE" />
+  <Field
+    ID="{149BF9A1-5BBB-468d-AA35-91ACEB054E3B}"
+    Name="WingtipCountry"
+    StaticName="WingtipCountry"
+    DisplayName="Country"
+    Type="Choice"
+    Group="Wingtip Columns"
+    Sortable="TRUE">
+    <Default>USA</Default>
+    <CHOICES>
+      <CHOICE>Italy</CHOICE>
+      <CHOICE>USA</CHOICE>
+      <CHOICE>Germany</CHOICE>
+      <CHOICE>France</CHOICE>
+    </CHOICES>
+  </Field>
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100D654C9A8BF564992A0E65F8ACB0D4B66"
+               Name="WingtipContact"
+               Group="Wingtip Content Types"
+               Description="Base Wingtip Contact Type"               
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef
+       ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}"
+       Name="Title"
+       DisplayName="Full name"
+       Required="TRUE" />
+      <FieldRef
+        ID="{C7792AD6-F2F3-4f2d-A7E5-75D5A8206FD9}"
+        Name="WingtipContactID"
+        DisplayName="Contact ID"
+        Required="TRUE" />
+      <FieldRef
+        ID="{A8F24550-55CD-4d34-A015-811954C6CE24}"
+        Name="WingtipCompanyName"
+        DisplayName="Company Name" />
+      <FieldRef
+        ID="{149BF9A1-5BBB-468d-AA35-91ACEB054E3B}"
+        Name="WingtipCountry"
+        DisplayName="Country" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

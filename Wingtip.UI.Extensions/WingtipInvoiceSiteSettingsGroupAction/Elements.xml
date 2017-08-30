@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomActionGroup
+    Location="Microsoft.SharePoint.SiteSettings"
+    Id="Wingtip.CustomActions.Inovices.Settings"
+    Description="View Invoice Settings"
+    Title="Invoice Management" />
+    <CustomAction
+       Location="Microsoft.SharePoint.SiteSettings"
+       GroupId="Wingtip.CustomActions.Inovices.Settings"
+       Id="Wingtip.CustomActions.Inovices.SampleSettings"
+       Title="Invoices Sample Settings Page"
+       Description="Go to a custom page for managing invoices' settings.">
+      <UrlAction Url="~site/_layouts/Wingtip.UI.Extensions/InvoiceSettings.aspx"></UrlAction>
+    </CustomAction>  
+</Elements>

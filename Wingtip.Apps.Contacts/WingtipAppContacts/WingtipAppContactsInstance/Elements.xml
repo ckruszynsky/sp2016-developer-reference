@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="WingtipAppContacts"
+                OnQuickLaunch="TRUE"
+                TemplateType="100"
+                Url="Lists/WingtipAppContacts"
+                Description="Wingtip App Contacts List">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Paolo Pialorsi</Field>
+          <Field Name="WingtipAppContactDescription">paolo@Wingtip.com</Field>
+          <Field Name="WingtipAppContactTelephone">+39-030-123456</Field>
+          <Field Name="WingtipAppContactEmail">paolo@Wingtip.com</Field>
+          <Field Name="WingtipAppContactPhoto">http://dev.wingtip.com/WingtipAppsContacts/Images/paolo.jpg</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Marco Russo</Field>
+          <Field Name="WingtipAppContactDescription">marco@Wingtip.com</Field>
+          <Field Name="WingtipAppContactTelephone">+39-011-654321</Field>
+          <Field Name="WingtipAppContactEmail">marco@Wingtip.com</Field>
+          <Field Name="WingtipAppContactPhoto">http://dev.wingtip.com/WingtipAppsContacts/Images/marco.jpg</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Roberto Brunetti</Field>
+          <Field Name="WingtipAppContactDescription">roberto@Wingtip.com</Field>
+          <Field Name="WingtipAppContactTelephone">+39-055-123456</Field>
+          <Field Name="WingtipAppContactEmail">roberto@Wingtip.com</Field>
+          <Field Name="WingtipAppContactPhoto">http://dev.wingtip.com/WingtipAppsContacts/Images/roberto.jpg</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Luca Regnicoli</Field>
+          <Field Name="WingtipAppContactDescription">luka@Wingtip.com</Field>
+          <Field Name="WingtipAppContactTelephone">+39-055-651243</Field>
+          <Field Name="WingtipAppContactEmail">luka@Wingtip.com</Field>
+          <Field Name="WingtipAppContactPhoto">http://dev.wingtip.com/WingtipAppsContacts/Images/luca.jpg</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

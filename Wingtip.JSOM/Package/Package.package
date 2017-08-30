@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="fac7358a-32d6-4c6b-98db-65eba7ecef27" solutionId="fac7358a-32d6-4c6b-98db-65eba7ecef27" resetWebServer="false" sharePointProductVersion="16.0" name="Wingtip.JSOM" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="74ceea59-e0ee-4537-a8a7-e4b1e111aa9b" />
+  </projectItems>
+</package>

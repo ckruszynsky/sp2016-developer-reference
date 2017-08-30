@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="c123ab7d-8d44-4400-b391-7847b541b224" Scope="Web" Title="Wingtip.Data.ContentTypes Feature1">
+  <ElementManifests>
+    <ElementManifest Location="WingtipInvoice\Elements.xml" />
+  </ElementManifests>
+</Feature>

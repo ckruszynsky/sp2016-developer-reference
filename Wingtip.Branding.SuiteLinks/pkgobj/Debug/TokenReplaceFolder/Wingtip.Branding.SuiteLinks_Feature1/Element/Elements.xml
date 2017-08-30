@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--Adding DelegateControl reference to our custom SuiteSuiteLinksDelegate Control-->
+  <Control ControlSrc="/_controltemplates/16/Wingtip.Branding.SuiteLinks\CustomSuiteLinksDelegate.ascx" 
+           Id="AdditionalPageHead" 
+           Sequence="90" 
+   />
+</Elements>

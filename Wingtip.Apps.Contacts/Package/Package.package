@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="988203ea-da95-4af1-bac9-ed09981db4ae" 
+        solutionId="988203ea-da95-4af1-bac9-ed09981db4ae" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Wingtip.Apps.Contacts"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="78936cc5-c881-4e1c-b5da-e451453dbbdc" />
+  </features>
+</package>

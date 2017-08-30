@@ -1,0 +1,11 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.Services.Client\bin\Release\Wingtip.WF.Services.Client.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.Services.Client\bin\Release\Wingtip.WF.Services.Client.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.Services.Client\bin\Release\Wingtip.WF.Services.Client.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.Services.Client\bin\Release\Microsoft.SharePoint.Client.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.Services.Client\bin\Release\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.Services.Client\bin\Release\Microsoft.SharePoint.Client.WorkflowServices.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.Services.Client\bin\Release\Microsoft.SharePoint.Client.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.Services.Client\bin\Release\Microsoft.SharePoint.Client.Runtime.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.Services.Client\obj\Release\Wingtip.WF.Services.Client.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.Services.Client\obj\Release\Wingtip.WF.Services.Client.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.Services.Client\obj\Release\Wingtip.WF.Services.Client.pdb

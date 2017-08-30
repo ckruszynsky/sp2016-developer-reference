@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="4ca739cd-562a-44f6-8b74-c31c5d6c1554" Scope="Web" Title="Wingtip.SiteDefinitions Feature1">
+  <ElementManifests>
+    <ElementManifest Location="WingtipProjects\Elements.xml" />
+    <ElementFile Location="WingtipProjects\Schema.xml" />
+    <ElementManifest Location="WingtipProjectsInstance\Elements.xml" />
+    <ElementManifest Location="WingtipProject\Elements.xml" />
+  </ElementManifests>
+</Feature>

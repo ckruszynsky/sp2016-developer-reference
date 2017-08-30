@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Content Types for Wingtip" Id="c5eed1ff-8584-4ad8-98f2-53307842b09a" Scope="Site" Title="Wingtip Content Types">
+  <ElementManifests>
+    <ElementManifest Location="WingtipContact\Elements.xml" />
+    <ElementManifest Location="WingtipContactsInstance\Elements.xml" />
+    <ElementManifest Location="WingtipContacts\Elements.xml" />
+    <ElementFile Location="WingtipContacts\Schema.xml" />
+    <ElementManifest Location="WingtipCustomer\Elements.xml" />
+    <ElementManifest Location="WingtipSupplier\Elements.xml" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0101002039C03B61C64EC4A04F5361F3851068" Name="JavaScript Display Template" Group="Display Template Content Types" Description="Create a new custom CSR JavaScript Display Template." Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/JavaScript Display Template" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{5f47e085-2150-41dc-b661-442f3027f552}" Name="SelectFilename" />
+			<FieldRef ID="{8553196d-ec8d-4564-9861-3dbe931050c8}" Name="FileLeafRef" Required="TRUE" />
+			<FieldRef ID="{8c06beca-0777-48f7-91c7-6da68bc07b69}" Name="Created" Hidden="TRUE" />
+			<FieldRef ID="{28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f}" Name="Modified" Hidden="TRUE" />
+			<FieldRef ID="{822c78e3-1ea9-4943-b449-57863ad33ca9}" Name="Modified_x0020_By" Hidden="FALSE" />
+			<FieldRef ID="{4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb}" Name="Created_x0020_By" Hidden="FALSE" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+			<FieldRef ID="{9da97a8a-1da5-4a77-98d3-4bc10456e700}" Name="Description" />
+			<FieldRef ID="{3d0684f7-ca97-413d-9d03-d00f480059ae}" Name="DisplayTemplateJSTemplateHidden" />
+			<FieldRef ID="{0e49b273-3102-4b7d-b609-2e05dd1a17d9}" Name="DisplayTemplateJSTargetControlType" Required="TRUE" />
+			<FieldRef ID="{57468ccb-0c02-422c-ba0a-61a44ba41784}" Name="DisplayTemplateJSIconUrl" />
+			<FieldRef ID="{d63173ac-b914-4f90-9cf8-4ff4352e41a3}" Name="DisplayTemplateJSTemplateType" Required="TRUE" />
+			<FieldRef ID="{df8bd7e5-b3db-4a94-afb4-7296397d829d}" Name="DisplayTemplateJSTargetScope" Required="TRUE" />
+			<FieldRef ID="{9f927425-78e9-49c3-b03b-65e1211394e1}" Name="DisplayTemplateJSTargetListTemplate" />
+			<FieldRef ID="{ed095cf7-534e-460b-965f-f14269e70f5a}" Name="DisplayTemplateJSTargetContentType" Hidden="TRUE" />
+			<FieldRef ID="{0f2f686a-3921-432e-85fd-9c535bf671b2}" Name="DisplayTemplateJSConfigurationUrl" Hidden="TRUE" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>DocumentLibraryForm</Display>
+					<Edit>DocumentLibraryForm</Edit>
+					<New>DocumentLibraryForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

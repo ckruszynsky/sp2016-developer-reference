@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="d4211173-69d6-4af6-82f0-77b5d66229cf" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="Wingtip.Branding.MasterPages.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="Wingtip.Branding.MasterPages_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

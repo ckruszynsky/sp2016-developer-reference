@@ -1,0 +1,2 @@
+obj\x86\Debug\Workflow1.g.xaml
+obj\x86\Debug\Wingtip.WF.SampleFlow_Workflow1_BeforeInitializeComponentHelper.txt

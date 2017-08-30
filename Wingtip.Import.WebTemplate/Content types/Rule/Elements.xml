@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0100DC2417D125A4489CA59DCC70E3F152B2" Name="Rule" Group="_Hidden" Description="Create a rule that moves content submitted to this site to the correct library or folder." Sealed="TRUE" Overwrite="TRUE" FeatureId="{0c8a9a47-22a9-4798-82f1-00e62a96006e}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Rule" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+			<FieldRef ID="{7ba87dae-e90b-431b-8a02-8fc26e453880}" Name="RoutingRuleName" DisplayName="Rule Name" Required="TRUE" />
+			<FieldRef ID="{34a72e09-3ca6-4931-b2e3-f81c40bb87bd}" Name="RoutingRuleDescription" DisplayName="Description" />
+			<FieldRef ID="{d4a6af1d-c6d7-4045-8def-cefa25b9ec31}" Name="RoutingPriority" DisplayName="Priority" />
+			<FieldRef ID="{3c4e7a5b-b7d5-4779-a14a-490803e63923}" Name="RoutingEnabled" DisplayName="Active" />
+			<FieldRef ID="{592102d3-4bce-4640-a49e-b6f23d480b7d}" Name="RoutingContentType" DisplayName="Submission Content Type" />
+			<FieldRef ID="{baf14289-0687-448c-b13c-c98dc4183e06}" Name="RoutingContentTypeInternal" DisplayName="Submission Content Type (Internal)" />
+			<FieldRef ID="{ff4470ae-85d6-49ab-a501-e5772848f6c7}" Name="RoutingConditions" DisplayName="Condition XML" />
+			<FieldRef ID="{ff4470ae-85d6-49ab-a501-e5772848f6c8}" Name="RoutingConditionProperties" DisplayName="Properties used in Conditions" />
+			<FieldRef ID="{186175f6-e318-4e9a-b5f7-4f7c751585a0}" Name="RoutingAliases" DisplayName="Aliases" />
+			<FieldRef ID="{bda383b2-0bc3-4b10-936e-d7e48974e230}" Name="RoutingTargetLibrary" DisplayName="Target Library" Required="TRUE" />
+			<FieldRef ID="{7383b80f-b38d-4dde-b9e0-5319f0777069}" Name="RoutingTargetFolder" DisplayName="Target Folder" />
+			<FieldRef ID="{10a4d7f7-ab3a-426f-b5cc-ab1eb03a94f4}" Name="RoutingTargetPath" DisplayName="Target Path" />
+			<FieldRef ID="{2a647aba-7c69-482b-97b2-dc94f2fb39dc}" Name="RoutingAutoFolderProp" DisplayName="Property for Automatic Folder Creation" />
+			<FieldRef ID="{e1fa3211-0188-4a95-a737-8775782cbac0}" Name="RoutingAutoFolderSettings" DisplayName="Auto folder configuration data" />
+			<FieldRef ID="{dc7d1e4c-c725-4ffb-995b-4ff324656e91}" Name="RoutingCustomRouter" DisplayName="Custom Router" />
+			<FieldRef ID="{a2455e0a-f63c-46af-857c-dbd4199ff95f}" Name="RoutingRuleExternal" DisplayName="Route To External Location" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>ListForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+				<FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+					<Edit>_layouts/15/EditRule.aspx</Edit>
+					<New>_layouts/15/EditRule.aspx</New>
+				</FormUrls>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

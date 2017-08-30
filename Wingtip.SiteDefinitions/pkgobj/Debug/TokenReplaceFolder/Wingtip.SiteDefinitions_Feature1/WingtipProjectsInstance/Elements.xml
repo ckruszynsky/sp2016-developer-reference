@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance  FeatureId="{4ca739cd-562a-44f6-8b74-c31c5d6c1554}"
+                Title="Wingtip Projects" 
+                OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/Projects" Description="Wingtip Projects"></ListInstance>
+</Elements>

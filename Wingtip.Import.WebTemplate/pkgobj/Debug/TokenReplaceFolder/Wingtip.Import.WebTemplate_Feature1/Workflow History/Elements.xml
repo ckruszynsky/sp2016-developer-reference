@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0109" Name="Workflow History" Group="_Hidden" Description="The history of a workflow." Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Workflow History" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+			<FieldRef ID="{20a1a5b1-fddf-4420-ac68-9701490e09af}" Name="Event" />
+			<FieldRef ID="{de21c770-a12b-4f88-af4b-aeebd897c8c2}" Name="WorkflowInstance" />
+			<FieldRef ID="{8d426880-8d96-459b-ae48-e8b3836d8b9d}" Name="WorkflowAssociation" />
+			<FieldRef ID="{bfb1589e-2016-4b98-ae62-e91979c3224f}" Name="WorkflowTemplate" />
+			<FieldRef ID="{f44e428b-61c8-4100-a911-a3a635f43bb5}" Name="List" />
+			<FieldRef ID="{92b8e9d0-a11b-418f-bf1c-c44aaa73075d}" Name="Item" />
+			<FieldRef ID="{5928ff1f-daa1-406c-b4a9-190485a448cb}" Name="User" />
+			<FieldRef ID="{5602dc33-a60a-4dec-bd23-d18dfcef861d}" Name="Occurred" />
+			<FieldRef ID="{c86a2f7f-7680-4a0b-8907-39c4f4855a35}" Name="Group" />
+			<FieldRef ID="{dcde7b1f-918b-4ed5-819f-9798f8abac37}" Name="Outcome" />
+			<FieldRef ID="{4d54445d-1c84-4a6d-b8db-a51ded4e1acc}" Name="Duration" />
+			<FieldRef ID="{2fd53156-ff9d-4cc3-b0ac-fe8a7bc82283}" Name="Description" />
+			<FieldRef ID="{38269294-165e-448a-a6b9-f0e09688f3f9}" Name="Data" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>ListForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

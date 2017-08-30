@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <!-- Site Columns used by the Content Type -->
+  <Field
+    ID="{F1D40C65-7A6C-4148-AE99-A6DAE71FD375}"
+    Name="WingtipInvoiceNumber"
+    StaticName="WingtipInvoiceNumber"
+    DisplayName="Invoice Number"
+    Type="Text"
+    Group="Wingtip Columns"
+    Sortable="TRUE" />
+  <Field
+    ID="{D29E8CB4-35C5-4EB0-AB59-9C834649C3A0}"
+    Name="WingtipInvoiceDescription"
+    StaticName="WingtipInvoiceDescription"
+    DisplayName="Description"
+    Type="Note"
+    RichText="TRUE"
+    RichTextMode="FullHtml"
+    Group="Wingtip Columns"
+    Sortable="TRUE" />
+  <Field
+    ID="{1F516F60-B435-464F-8B8F-016C04D64CA7}"
+    Name="WingtipInvoiceStatus"
+    StaticName="WingtipInvoiceStatus"
+    DisplayName="Status"
+    Type="Choice"
+    Group="Wingtip Columns"
+    Sortable="TRUE">
+    <Default>Draft</Default>
+    <CHOICES>
+      <CHOICE>Draft</CHOICE>
+      <CHOICE>Approved</CHOICE>
+      <CHOICE>Sent</CHOICE>
+      <CHOICE>Archived</CHOICE>
+    </CHOICES>
+  </Field>
+  
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010100333433628CE34CDCB69F5819AA6C4A64"
+               Name="WingtipInvoice"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef
+        ID="{F1D40C65-7A6C-4148-AE99-A6DAE71FD375}"
+        Name="WingtipInvoiceNumber"
+        Required="TRUE" />
+      <FieldRef
+        ID="{D29E8CB4-35C5-4EB0-AB59-9C834649C3A0}"
+        Name="WingtipInvoiceDescription" />
+      <FieldRef
+        ID="{1F516F60-B435-464F-8B8F-016C04D64CA7}"
+        Name="WingtipInvoiceStatus"
+        Required="TRUE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010039D9B22CE0F64694AADB0DD53EDDEE08"
+               Name="WingtipInvoice"
+               Group="Wingtip Content Types"
+               Description="Wingtip Invoices"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{39326F70-8E01-4B68-89EE-ACDA8F2C6A07}" Name="WingtipInvoiceID" DisplayName="Invoice ID" />
+      <FieldRef ID="{E1823E3D-55E5-4924-A215-04032C756DFC}" Name="WingtipInvoiceDate" DisplayName="Invoice Date" />
+      <FieldRef ID="{0B25DB32-245C-4C64-96EF-974AA2E75ABA}" Name="WingtipInvoiceQuantity" DisplayName="Quantity" />
+      <FieldRef ID="{D89D414D-CD3F-43B6-93D1-3A508FA0A5FD}" Name="WingtipInvoiceTotal" DisplayName="Total"/>
+      <FieldRef ID="{C7792AD6-F2F3-4f2d-A7E5-75D5A8206FD9}" Name="WingtipContactID" DisplayName="Contact ID"/>
+      <FieldRef ID="{E9DCA3CD-6926-4505-8A37-8CD23BC5B699}" Name="WingtipInvoiceAddress" DisplayName="Address"/>
+    </FieldRefs>
+  </ContentType>
+  <Field ID="{39326F70-8E01-4B68-89EE-ACDA8F2C6A07}" Name="WingtipInvoiceID" StaticName="WingtipInvoiceID" DisplayName="Invoice ID" Type="Text" Group="Wingtip Columns" Sortable="TRUE" />
+  <Field ID="{0B25DB32-245C-4C64-96EF-974AA2E75ABA}" Name="WingtipInvoiceQuantity" StaticName="WingtipInvoiceQuantity" DisplayName="Quantity" Type="Number" Group="Wingtip Columns" Sortable="TRUE" />
+  <Field ID="{E1823E3D-55E5-4924-A215-04032C756DFC}" Name="WingtipInvoiceDate" StaticName="WingtipInvoiceDate" DisplayName="Invoice Date" Type="DateTime" Group="Wingtip Columns" Sortable="TRUE" />
+  <Field ID="{E9DCA3CD-6926-4505-8A37-8CD23BC5B699}" Name="WingtipInvoiceAddress" StaticName="WingtipInvoiceAddress" DisplayName="Address" Type="Text" Group="Wingtip Columns" Sortable="TRUE" />
+  <Field ID="{D89D414D-CD3F-43B6-93D1-3A508FA0A5FD}" Name="WingtipInvoiceTotal" DisplayName="Total" StaticName="WingtipInvoiceTotal" Type="Number" Group="Wingtip Columns" Sortable="TRUE" />
+</Elements>

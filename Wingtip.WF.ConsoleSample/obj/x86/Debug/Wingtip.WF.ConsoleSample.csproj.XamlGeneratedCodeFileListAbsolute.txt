@@ -1,0 +1,3 @@
+obj\x86\Debug\_Wingtip.WF.ConsoleSample.g.cs
+obj\x86\Debug\VacationWorkflow.g.cs
+obj\x86\Debug\DevLeap.WF4.SampleFlow_VacationWorkflow_BeforeInitializeComponentHelper.cs

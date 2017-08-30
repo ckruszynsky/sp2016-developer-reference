@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="fadbaccc-6feb-4bc3-a763-7c7a674d6c3c" ReceiverAssembly="Microsoft.SharePoint.WorkflowServices, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" ReceiverClass="Microsoft.SharePoint.WorkflowServices.SPWorkflowPackageFeatureReceiver" Scope="Web" Title="Wingtip.WF.SP.SampleWorkflow Feature1">
+  <ElementManifests>
+    <ElementManifest Location="CheckoutItem\Elements.xml" />
+    <ElementFile Location="CheckoutItem\Workflow.xaml" />
+    <ElementFile Location="CheckoutItem\WorkflowStartAssociation" />
+  </ElementManifests>
+</Feature>

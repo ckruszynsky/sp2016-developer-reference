@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="WingtipContacts" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/WingtipContacts" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+
+      <ContentType ID="0x0100D654C9A8BF564992A0E65F8ACB0D4B6600D458F4EF7D494F43B84D46C30F7BA444" Name="WingtipCustomer" Group="Wingtip Content Types" Description="Customer of Wingtip" Inherits="TRUE" Version="0">
+        <FieldRefs>
+
+          <FieldRef ID="{AC689935-8E8B-485e-A45E-FF5A338DD92F}" Name="WingtipCustomerLevel" Required="TRUE" />
+        </FieldRefs>
+      </ContentType>
+
+      <ContentType ID="0x0100D654C9A8BF564992A0E65F8ACB0D4B66" 
+                   Name="WingtipContact" 
+                   Group="Wingtip Content Types" 
+                   Description="Base Contact of Wingtip" 
+                   Inherits="TRUE" 
+                   Hidden="TRUE" Version="0">
+        <FieldRefs>
+
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" DisplayName="Full name" Required="TRUE" />
+          <FieldRef ID="{C7792AD6-F2F3-4f2d-A7E5-75D5A8206FD9}" Name="WingtipContactID" DisplayName="Contact ID" Required="TRUE" />
+          <FieldRef ID="{A8F24550-55CD-4d34-A015-811954C6CE24}" Name="WingtipCompanyName" DisplayName="Company Name" />
+          <FieldRef ID="{149BF9A1-5BBB-468d-AA35-91ACEB054E3B}" Name="WingtipCountry" DisplayName="Country" />
+        </FieldRefs>
+      </ContentType>   
+      <ContentType ID="0x0100D654C9A8BF564992A0E65F8ACB0D4B66009FBA6CDECBAC4F5D81ECC7433A3F5A83" Name="WingtipSupplier" Group="Wingtip Content Types" Description="Supplier of Wingtip" Inherits="TRUE" Version="0">
+        <FieldRefs>
+
+          <FieldRef ID="{A73DE518-B9B9-4e8d-9D94-6099B4603997}" Name="WingtipSupplierAccount" Required="TRUE" />
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+
+
+
+
+
+
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field ID="{AC689935-8E8B-485e-A45E-FF5A338DD92F}" Name="WingtipCustomerLevel" StaticName="WingtipCustomerLevel" DisplayName="Customer Level" Type="Choice" Group="Wingtip Columns">
+        <Default>Level C</Default>
+        <CHOICES>
+
+
+
+          <CHOICE>Level A</CHOICE>
+          <CHOICE>Level B</CHOICE>
+          <CHOICE>Level C</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field ID="{C7792AD6-F2F3-4f2d-A7E5-75D5A8206FD9}" Name="WingtipContactID" StaticName="WingtipContactID" DisplayName="Contact ID" Type="Text" Group="Wingtip Columns" Sortable="TRUE" />
+      <Field ID="{A8F24550-55CD-4d34-A015-811954C6CE24}" Name="WingtipCompanyName" StaticName="WingtipCompanyName" DisplayName="Company Name" Type="Text" Group="Wingtip Columns" Sortable="TRUE" />
+      <Field ID="{149BF9A1-5BBB-468d-AA35-91ACEB054E3B}" Name="WingtipCountry" StaticName="WingtipCountry" DisplayName="Country" Type="Choice" Group="Wingtip Columns" Sortable="TRUE">
+        <Default>USA</Default>
+        <CHOICES>
+
+
+
+
+          <CHOICE>Italy</CHOICE>
+          <CHOICE>USA</CHOICE>
+          <CHOICE>Germany</CHOICE>
+          <CHOICE>France</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field ID="{A73DE518-B9B9-4e8d-9D94-6099B4603997}" Name="WingtipSupplierAccount" StaticName="WingtipSupplierAccount" DisplayName="Supplier Account" Type="User" Group="Wingtip Columns" Sortable="TRUE" />
+    </Fields>
+    <Views>
+
+
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="WingtipContactID" />
+          <FieldRef Name="WingtipCompanyName" />
+          <FieldRef Name="WingtipCountry" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+      <!--<View BaseViewID="2"
+            Type="HTML"
+            WebPartZoneID="Main"
+            DisplayName="All Customers"
+            DefaultView="FALSE"
+            MobileView="TRUE"
+            MobileDefaultView="FALSE"
+            SetupPath="pages\viewpage.aspx"
+            ImageUrl="/_layouts/images/generic.png"
+            Url="AllCustomers.aspx">
+        <Toolbar Type="FreeForm" />
+        <XslLink>Contacts_Main.xsl</XslLink>
+        <RowLimit Paged="TRUE">20</RowLimit>
+        <ViewFields>
+          <FieldRef  Name="Attachments" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="WingtipContactID" />
+          <FieldRef Name="WingtipCompanyName" />
+          <FieldRef Name="WingtipCountry" />
+          <FieldRef Name="WingtipCustomerLevel" />
+        </ViewFields>
+        <Query>
+          <Where>
+            <Eq>
+              <FieldRef Name="ContentType" />
+              <Value Type="Text">WingTipCustomer</Value>
+            </Eq>
+          </Where>
+          <OrderBy>
+            <FieldRef Name="ID" />
+          </OrderBy>
+        </Query>
+      </View>-->   
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

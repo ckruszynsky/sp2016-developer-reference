@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x010802" Name="Administrative Task" Group="_Hidden" Description="An administrative work item that an administrator needs to complete." Hidden="TRUE" Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Administrative Task" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{c3a92d97-2b77-4a25-9698-3ab54874bc6f}" Name="Predecessors" />
+			<FieldRef ID="{d2a04afc-9a05-48c8-a7fa-fa98f9496141}" Name="RelatedItems" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+			<FieldRef ID="{7b016ee5-70aa-4abb-8aa3-01795b4efe6f}" Name="Action" />
+			<FieldRef ID="{93490584-b6a8-4996-aa00-ead5f59aae0d}" Name="Description" />
+			<FieldRef ID="{cf935cc2-a00c-4ad3-bca1-0865ab15afc1}" Name="Priority" />
+			<FieldRef ID="{c15b34c3-ce7d-490a-b133-3f4de8801b76}" Name="Status" />
+			<FieldRef ID="{53101f38-dd2e-458c-b245-0c236cc13d1a}" Name="AssignedTo" />
+			<FieldRef ID="{48b4a73e-8853-44ac-83a8-3a4bd59ce9ec}" Name="Service" />
+			<FieldRef ID="{af0a3d4b-3ceb-449e-9bf4-51103f2032e3}" Name="SystemTask" />
+			<FieldRef ID="{d2311440-1ed6-46ea-b46d-daa643dc3886}" Name="PercentComplete" />
+			<FieldRef ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" Name="Body" />
+			<FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="StartDate" />
+			<FieldRef ID="{cd21b4c2-6841-4f9e-a23a-738a65f99889}" Name="DueDate" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>TaskForm</Display>
+					<Edit>TaskForm</Edit>
+					<New>TaskForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

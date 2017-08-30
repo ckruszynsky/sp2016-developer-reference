@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Title="WTProjects" Revision="2" ListDir="" xmlns:ows="Microsoft SharePoint" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <NavBars>
+  </NavBars>
+  <Configurations>
+    <Configuration ID="0" Name="WTPROJECTS">
+      <Lists/>
+      <SiteFeatures>
+      </SiteFeatures>
+      <WebFeatures>
+        <Feature ID="4ca739cd-562a-44f6-8b74-c31c5d6c1554" />
+      </WebFeatures>
+      <Modules>
+        <Module Name="DefaultWithProjects" />
+      </Modules>
+    </Configuration>
+  </Configurations>
+  <Modules>
+    <Module Name="DefaultWithProjects" Url="" Path="">
+      <File Url="default.aspx" IgnoreIfAlreadyExists="TRUE">
+        <View List="Lists/Projects" BaseViewID="1"
+         WebPartZoneID="CentralZone" WebPartOrder="1">
+          <![CDATA[
+            <webParts>
+              <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+                <metaData>
+                  <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint,Version=15.0.0.0,Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+                  <importErrorMessage>Cannot import this Web Part.
+                  </importErrorMessage>
+                </metaData>
+                <data>
+                  <properties>
+                    <property name="AllowConnect" type="bool">True</property>
+                    <property name="ChromeType" type="chrometype">None</property>
+                    <property name="AllowClose" type="bool">False</property>
+                  </properties>
+                </data>
+              </webPart>
+            </webParts>
+          ]]>
+        </View>
+      </File>
+    </Module>
+  </Modules>
+  <ServerEmailFooter>Email from Wingtip Projects Site</ServerEmailFooter>
+</Project>

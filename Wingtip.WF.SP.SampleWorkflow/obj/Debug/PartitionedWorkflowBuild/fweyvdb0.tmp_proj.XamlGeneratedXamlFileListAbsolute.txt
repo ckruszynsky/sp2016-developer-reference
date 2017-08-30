@@ -1,0 +1,2 @@
+obj\Debug\PartitionedWorkflowBuild\Workflow.g.xaml
+obj\Debug\PartitionedWorkflowBuild\Wingtip.WF.SP.SampleWorkflow.CheckoutItem_Workflow_BeforeInitializeComponentHelper.txt

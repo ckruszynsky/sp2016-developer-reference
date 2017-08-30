@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="74125baa-cc5a-4d0e-8c07-5dde28cae711" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="Wingtip.Data.ContentTypes.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="LAYOUTS\XSL\Contacts_Main.xsl" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="Wingtip.Data.ContentTypes_WingtipContentTypeFeature\Feature.xml" />
+    <FeatureManifest Location="Wingtip.Data.ContentTypes_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

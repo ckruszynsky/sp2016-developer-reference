@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x010A" Name="Person" Group="_Hidden" Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Person" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+			<FieldRef ID="{bfc6f32c-668c-43c4-a903-847cca2f9b3c}" Name="Name" />
+			<FieldRef ID="{fce16b4c-fe53-4793-aaab-b4892e736d15}" Name="EMail" />
+			<FieldRef ID="{bf03d3ca-aa6e-4845-809a-b4378b37ce08}" Name="MobilePhone" />
+			<FieldRef ID="{e241f186-9b94-415c-9f66-255ce7f86235}" Name="Notes" />
+			<FieldRef ID="{9ba260b2-85a1-4a32-ad7a-63eaceffe6b4}" Name="IsSiteAdmin" />
+			<FieldRef ID="{4ed6dfdf-86a8-4894-bd1b-4fa28042be53}" Name="Deleted" />
+			<FieldRef ID="{d9339777-b964-489a-bf09-2ac3c3fe5f0d}" Name="Picture" />
+			<FieldRef ID="{05fdf852-4b64-4096-9b2b-d2a62a86bc59}" Name="Department" />
+			<FieldRef ID="{c4e0f350-52cc-4ede-904c-dd71a3d11f7d}" Name="JobTitle" />
+			<FieldRef ID="{829c275d-8744-4d9b-a42f-53f53eb60559}" Name="SipAddress" />
+			<FieldRef ID="{af5036db-36f4-46c8-bde7-a677bd0ef280}" Name="IsActive" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>ListForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Web AccessModifier="Internal"  xmlns="http://schemas.microsoft.com/SharePoint/2009/spmetal">
+  <List Name="WingtipContacts">
+    <!--
+    <ContentType Name="WingtipContact" Class="WingtipContact" />
+    <ContentType Name="WingtipCustomer" Class="WingtipCustomer" />
+    <ContentType Name="WingtipSupplier" Class="WingtipSupplier" />
+    -->
+  </List>
+  <List Name="WingtipInvoices">
+    <!--<ContentType Name="WingtipInvoice" Class="WingtipInvoice" />-->
+  </List>
+  <ExcludeOtherLists />
+</Web>

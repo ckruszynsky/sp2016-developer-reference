@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="63cbbd96-6cc0-4a4f-bd94-99dec319d71e" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="Wingtip.Import.WebTemplate.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="Wingtip.Import.WebTemplate_Feature1\Feature.xml" />
+    <FeatureManifest Location="Wingtip.Import.WebTemplate_Feature2\Feature.xml" />
+    <FeatureManifest Location="Wingtip.Import.WebTemplate_Feature3\Feature.xml" />
+    <FeatureManifest Location="Wingtip.Import.WebTemplate_Feature4\Feature.xml" />
+    <FeatureManifest Location="Wingtip.Import.WebTemplate_Feature5\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,5 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.CustomActivities\bin\Debug\Wingtip.WF.CustomActivities.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.CustomActivities\bin\Debug\Wingtip.WF.CustomActivities.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.CustomActivities\obj\Debug\Wingtip.WF.CustomActivities.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.CustomActivities\obj\Debug\Wingtip.WF.CustomActivities.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.CustomActivities\obj\Debug\Wingtip.WF.CustomActivities.pdb

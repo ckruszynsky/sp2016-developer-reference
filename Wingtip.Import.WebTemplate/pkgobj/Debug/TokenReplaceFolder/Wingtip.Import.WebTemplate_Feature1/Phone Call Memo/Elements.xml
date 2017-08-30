@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0100807FBAC5EB8A4653B8D24775195B5463" Name="Phone Call Memo" Group="Group Work Content Types" Description="Add a new Phone Call Memo." Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Phone Call Memo" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" />
+			<FieldRef ID="{7111aa1b-e7ae-4b69-acaf-db669b76e03a}" Name="V4CallTo" Required="TRUE" />
+			<FieldRef ID="{1b89212c-1c67-487a-8c14-4d30bf4ef223}" Name="ConfirmedTo" />
+			<FieldRef ID="{9b0e6471-c5c5-42ef-9ade-63170bf28819}" Name="Confidential" />
+			<FieldRef ID="{274b7e21-284a-4c49-bec6-f1f2cb6fc344}" Name="CallBack" />
+			<FieldRef ID="{344e9657-b17f-4344-a834-ff7c056bcc5e}" Name="CallbackNumber" />
+			<FieldRef ID="{6529a881-d745-4117-a552-3dcc7110e9b8}" Name="Detail" />
+			<FieldRef ID="{63fc6806-db53-4d0d-b18b-eaf90e96ddf5}" Name="CallTime" Required="TRUE" />
+			<FieldRef ID="{a6fd2bb9-c701-4168-99cc-242e42f7671a}" Name="Resolved" />
+			<FieldRef ID="{b4fa187b-eb65-478e-8bc6-93b0da320f03}" Name="ResolvedBy" />
+			<FieldRef ID="{c4995c71-4c5c-4e9f-afc1-a9033f2bfde5}" Name="ResolvedDate" />
+			<FieldRef ID="{6df9bd52-550e-4a30-bc31-a4366832a87e}" Name="Comments" />
+			<FieldRef ID="{cf68a174-123b-413e-9ec1-b43e3a3175d7}" Name="WhatsNew" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>ListForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

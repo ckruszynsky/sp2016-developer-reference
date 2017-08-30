@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0110" Name="Post" Group="List Content Types" Description="Create a new blog post." Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Post" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+			<FieldRef ID="{7662cd2c-f069-4dba-9e35-082cf976e170}" Name="Body" />
+			<FieldRef ID="{38bea83b-350a-1a6e-f34a-93a6af31338b}" Name="PostCategory" />
+			<FieldRef ID="{b1b53d80-23d6-e31b-b235-3a286b9f10ea}" Name="PublishedDate" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>BlogForm</Display>
+					<Edit>BlogForm</Edit>
+					<New>BlogForm</New>
+				</FormTemplates>
+			</XmlDocument>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+				<FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+					<Display>Lists/Posts/Post.aspx</Display>
+					<MobileDisplay>_layouts/15/mobile/disppost.aspx</MobileDisplay>
+					<MobileNew>_layouts/15/mobile/newpost.aspx</MobileNew>
+				</FormUrls>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

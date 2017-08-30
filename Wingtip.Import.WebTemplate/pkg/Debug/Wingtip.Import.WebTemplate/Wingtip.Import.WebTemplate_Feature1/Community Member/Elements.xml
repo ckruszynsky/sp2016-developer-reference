@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x010027FC2137D8DE4B00A40E14346D070D5201" Name="Community Member" Group="Community Content Types" Description="Add a new community member" Overwrite="TRUE" FeatureId="{4326e7fc-f35a-4b0f-927c-36264b0a4cf0}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Community Member" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{9e1a17bc-4b5a-498b-a0f7-e5d1ed43c349}" Name="Member" />
+			<FieldRef ID="{da25725f-5b12-4b26-8ed0-e560e4a87fff}" Name="MemberStatus" />
+			<FieldRef ID="{e236652c-cf8f-4917-8baa-30ffcccfb7e8}" Name="MemberStatusInt" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="FALSE" Hidden="TRUE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" />
+			<FieldRef ID="{cba948c8-9e42-44a0-b9f1-a39d91b28cb0}" Name="LastActivity" />
+			<FieldRef ID="{1bc74b88-bb81-4be5-961d-9cf75dfe0911}" Name="NumberOfBestResponses" />
+			<FieldRef ID="{178d4af1-459b-4f61-bb41-b347986ee37b}" Name="NumberOfDiscussions" />
+			<FieldRef ID="{51139f59-4bac-45cb-8047-9c633eed1db0}" Name="NumberOfReplies" />
+			<FieldRef ID="{5e74a6c4-8771-4273-88fc-682cf6839410}" Name="NumberOfRepliesToReachNextLevel" />
+			<FieldRef ID="{edd35d15-ae36-4b1b-91aa-0e288df6c612}" Name="ReputationScore" />
+			<FieldRef ID="{501c11be-6dbf-4e6d-b322-b1882da0c8c0}" Name="HideReputation" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>ListForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

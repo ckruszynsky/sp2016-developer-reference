@@ -1,0 +1,8 @@
+﻿<WorkflowDefinition xmlns="http://schemas.microsoft.com/sharepoint/2012/app/workflow">
+  <Description>My 'OrdersWorkflow' Workflow</Description>
+  <DisplayName>OrdersWorkflow</DisplayName>
+  <Id>0c3401e0-4848-4b72-99fd-9729565d6b66</Id>
+  <InitiationUrl>Pages/WFInitForm.aspx</InitiationUrl>
+  <RestrictAssociationToId>Lists/Orders</RestrictAssociationToId>
+  <RestrictAssociationToType>List</RestrictAssociationToType>
+</WorkflowDefinition>

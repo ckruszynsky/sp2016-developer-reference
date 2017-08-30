@@ -1,0 +1,1 @@
+bin\Debug\Wingtip.WebParts.wsp

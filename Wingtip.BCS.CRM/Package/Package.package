@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a0966637-006f-4e6f-8fbf-431f213b803f" solutionId="a0966637-006f-4e6f-8fbf-431f213b803f" resetWebServer="false" sharePointProductVersion="16.0" name="Wingtip.BCS.CRM" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="d4e99311-12e8-4714-aaf1-bbb7a97b42bc" />
+  </features>
+</package>

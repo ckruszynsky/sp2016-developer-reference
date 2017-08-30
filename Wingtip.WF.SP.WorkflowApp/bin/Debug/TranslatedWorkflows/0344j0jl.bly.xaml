@@ -1,0 +1,135 @@
+<Activity mc:Ignorable="sads" x:Class="Wingtip.WF.SP.WorkflowApp.OrdersWorkflow.Workflow"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:made="clr-namespace:Microsoft.Activities.Design.ExpressionTranslation;assembly=Microsoft.Activities.Design"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
+ xmlns:p="wf://workflow.windows.net/$Activities"
+ xmlns:p1="http://schemas.microsoft.com/workflow/2012/07/xaml/activities"
+ xmlns:s="clr-namespace:System;assembly=mscorlib"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="TargetApprover" Type="InArgument(x:String)" />
+    <x:Property Name="ApprovalRequestMessage" Type="InArgument(x:String)" />
+  </x:Members>
+  <Flowchart sads:DebugSymbol.Symbol="9xCFpEhvH8/lNM3h/YzaTL+/e0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRG9jdW1lbnRzXFZpc3VhbCBTdHVkaW8gMjAxNVxQcm9qZWN0c1xXaW5nVGlwXFdpbmd0aXAuV0YuU1AuV29ya2Zsb3dBcHBcT3JkZXJzV29ya2Zsb3dcV29ya2Zsb3cueGFtbAQxA34PAgEBOAlnGAIBCGwRbIwBAgEEcw9ziwECAQI=">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID0" Name="ApprovalTaskOutcome" />
+      <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID1" Name="ApprovalTaskId" />
+    </Flowchart.Variables>
+    <Flowchart.StartNode>
+      <FlowStep x:Name="__ReferenceID2">
+        <p:SingleTask TaskId="{x:Null}" AssignmentEmailBody="&lt;html&gt;&lt;body style='font-size:11pt;font-family:Segoe UI Light,sans-serif;color:#444444;'&gt;&lt;div&gt;&lt;span style='font-size:13.5pt'&gt;You have a new task.&lt;/span&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" AssignmentEmailSubject="Task Assigned" CancelationEmailBody="&lt;html&gt;&lt;body style='font-size:11pt;font-family:Segoe UI Light,sans-serif;color:#444444;'&gt;&lt;div&gt;&lt;span style='font-size:13.5pt'&gt;One of your tasks was canceled and deleted. You do not need to take any further action on that task.&lt;/span&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" CancelationEmailSubject="Task Canceled" CompletedStatus="Completed" ContentTypeId="0x0108003365C4474CAE8C42BCE396314E88E51F007B815983D391454AA1958C668FC7C058" DefaultTaskOutcome="2" OutcomeFieldName="OrderApprovalOutcome" OverdueEmailBody="&lt;html&gt;&lt;body style='font-size:11pt;font-family:Segoe UI Light,sans-serif;color:#444444;'&gt;&lt;div&gt;&lt;span style='font-size:13.5pt'&gt;You have an &lt;/span&gt;&lt;span style='font-size:13.5pt;color:#ff3b3b;'&gt;overdue&lt;/span&gt;&lt;span style='font-size:13.5pt'&gt; task.&lt;/span&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" OverdueEmailSubject="Task Overdue" OverdueReminderRepeat="1" OverdueRepeatTimes="1" PreserveIncompleteTasks="False" SendReminderEmail="True" Title="Workflow task" WaitForTaskCompletion="True" WaiveAssignmentEmail="False" WaiveCancelationEmail="False">
+          <p:SingleTask.AssignedTo>
+            <InArgument x:TypeArguments="x:String">
+              <p1:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="TargetApprover">
+                <p1:ExpressionContainerValue.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="TargetApprover">
+                    <ArgumentValue x:TypeArguments="x:String" ArgumentName="TargetApprover" />
+                  </InArgument>
+                </p1:ExpressionContainerValue.Arguments>
+                <ArgumentValue x:TypeArguments="x:String" ArgumentName="TargetApprover" />
+              </p1:ExpressionContainerValue>
+            </InArgument>
+          </p:SingleTask.AssignedTo>
+          <p:SingleTask.Body>
+            <InArgument x:TypeArguments="x:String">
+              <p1:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="ApprovalRequestMessage">
+                <p1:ExpressionContainerValue.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="ApprovalRequestMessage">
+                    <ArgumentValue x:TypeArguments="x:String" ArgumentName="ApprovalRequestMessage" />
+                  </InArgument>
+                </p1:ExpressionContainerValue.Arguments>
+                <ArgumentValue x:TypeArguments="x:String" ArgumentName="ApprovalRequestMessage" />
+              </p1:ExpressionContainerValue>
+            </InArgument>
+          </p:SingleTask.Body>
+          <p:SingleTask.DueDate>
+            <InArgument x:TypeArguments="s:DateTime">
+              <p1:ExpressionContainerValue x:TypeArguments="s:DateTime" DisplayName="DateTime.UtcNow.AddDays(5)">
+                <p1:AddToDate Days="5">
+                  <p1:AddToDate.Input>
+                    <InArgument x:TypeArguments="s:DateTime">
+                      <p1:CurrentDate />
+                    </InArgument>
+                  </p1:AddToDate.Input>
+                </p1:AddToDate>
+              </p1:ExpressionContainerValue>
+            </InArgument>
+          </p:SingleTask.DueDate>
+          <p:SingleTask.Outcome>
+            <OutArgument x:TypeArguments="x:Int32">
+              <p1:ExpressionContainerReference x:TypeArguments="x:Int32" DisplayName="ApprovalTaskOutcome">
+                <p1:ExpressionContainerReference.Arguments>
+                  <InOutArgument x:TypeArguments="x:Int32" x:Key="ApprovalTaskOutcome">
+                    <VariableReference x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID0}" />
+                  </InOutArgument>
+                </p1:ExpressionContainerReference.Arguments>
+                <ArgumentReference x:TypeArguments="x:Int32" ArgumentName="ApprovalTaskOutcome" />
+              </p1:ExpressionContainerReference>
+            </OutArgument>
+          </p:SingleTask.Outcome>
+          <p:SingleTask.RelatedContentLinkListId>
+            <InArgument x:TypeArguments="s:Guid">
+              <p1:ExpressionContainerValue x:TypeArguments="s:Guid">
+                <p:GetCurrentListId />
+              </p1:ExpressionContainerValue>
+            </InArgument>
+          </p:SingleTask.RelatedContentLinkListId>
+          <p:SingleTask.RelatedContentLinkListItemId>
+            <InArgument x:TypeArguments="s:Guid">
+              <p1:ExpressionContainerValue x:TypeArguments="s:Guid">
+                <p:GetCurrentItemGuid />
+              </p1:ExpressionContainerValue>
+            </InArgument>
+          </p:SingleTask.RelatedContentLinkListItemId>
+          <p:SingleTask.RelatedContentLinkListItemIntegerId>
+            <InArgument x:TypeArguments="x:Int32">
+              <p1:ExpressionContainerValue x:TypeArguments="x:Int32">
+                <p:GetCurrentItemId />
+              </p1:ExpressionContainerValue>
+            </InArgument>
+          </p:SingleTask.RelatedContentLinkListItemIntegerId>
+          <p:SingleTask.TaskItemId>
+            <OutArgument x:TypeArguments="x:Int32">
+              <p1:ExpressionContainerReference x:TypeArguments="x:Int32" DisplayName="ApprovalTaskId">
+                <p1:ExpressionContainerReference.Arguments>
+                  <InOutArgument x:TypeArguments="x:Int32" x:Key="ApprovalTaskId">
+                    <VariableReference x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID1}" />
+                  </InOutArgument>
+                </p1:ExpressionContainerReference.Arguments>
+                <ArgumentReference x:TypeArguments="x:Int32" ArgumentName="ApprovalTaskId" />
+              </p1:ExpressionContainerReference>
+            </OutArgument>
+          </p:SingleTask.TaskItemId>
+        </p:SingleTask>
+        <FlowStep.Next>
+          <FlowSwitch x:TypeArguments="x:Int32" x:Name="__ReferenceID3">
+            <FlowSwitch.Default>
+              <FlowStep x:Name="__ReferenceID4">
+                <p:WriteToHistory DisplayName="WriteRejected" Message="Task Rejected" />
+              </FlowStep>
+            </FlowSwitch.Default>
+            <FlowSwitch.Expression>
+              <p1:ExpressionContainerValue x:TypeArguments="x:Int32" DisplayName="ApprovalTaskOutcome">
+                <p1:ExpressionContainerValue.Arguments>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="ApprovalTaskOutcome">
+                    <VariableValue x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID0}" />
+                  </InArgument>
+                </p1:ExpressionContainerValue.Arguments>
+                <ArgumentValue x:TypeArguments="x:Int32" ArgumentName="ApprovalTaskOutcome" />
+              </p1:ExpressionContainerValue>
+            </FlowSwitch.Expression>
+            <FlowStep x:Key="0" x:Name="__ReferenceID5">
+              <p:WriteToHistory DisplayName="Write Approved" Message="Task Approved" />
+            </FlowStep>
+          </FlowSwitch>
+        </FlowStep.Next>
+      </FlowStep>
+    </Flowchart.StartNode>
+    <x:Reference>__ReferenceID2</x:Reference>
+    <x:Reference>__ReferenceID3</x:Reference>
+    <x:Reference>__ReferenceID4</x:Reference>
+    <x:Reference>__ReferenceID5</x:Reference>
+  </Flowchart>
+</Activity>

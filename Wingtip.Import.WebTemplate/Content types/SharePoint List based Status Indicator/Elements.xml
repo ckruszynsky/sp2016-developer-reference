@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x00A7470EADF4194E2E9ED1031B61DA088402" Name="SharePoint List based Status Indicator" Group="Business Intelligence" Description="Create a new Status Indicator using data from SharePoint Lists" Overwrite="TRUE" FeatureId="{43f41342-1a37-4372-8ca0-b44d881e4434}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/SharePoint List based Status Indicator" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{249a1c1a-5a3e-4173-abad-779b01892510}" Name="KpiDescription" />
+			<FieldRef ID="{0121cb2b-4515-44f2-9d5a-0dcb3bf556aa}" Name="KpiComments" />
+			<FieldRef ID="{f0816223-fd98-41f9-aa57-b7f7db462faa}" Name="Value" />
+			<FieldRef ID="{6e4b3aad-350d-42fa-bd61-d1de715b45db}" Name="Goal" />
+			<FieldRef ID="{e84a049e-230d-4751-8d5c-8f615e968df2}" Name="Warning" />
+			<FieldRef ID="{3366aae9-30a9-43f5-a2cb-1a6ee44e2ce4}" Name="FormattedValue" />
+			<FieldRef ID="{e9df93f4-7951-474b-8cc4-e240c2f5e600}" Name="FormattedGoal" />
+			<FieldRef ID="{f53d350d-854e-4962-9318-89d56d30773a}" Name="FormattedWarning" />
+			<FieldRef ID="{9730102c-9470-4515-960e-6dfb2d89a68b}" Name="DetailLink" />
+			<FieldRef ID="{56747800-d36e-4625-abe3-b1bc74a7d5f8}" Name="LowerValuesAreBetter" />
+			<FieldRef ID="{e247cbb0-abb3-4759-b9f4-0128e37dd34a}" Name="UpdateError" />
+			<FieldRef ID="{fd3e3a59-bf10-4c99-b678-5dd7fcc6cb28}" Name="LastUpdated" />
+			<FieldRef ID="{a9ea6e2d-bc5c-4ccc-bad8-8ddfe519710f}" Name="DataSource" />
+			<FieldRef ID="{2c7db8af-02b0-4177-b77f-15c942c08427}" Name="ViewGuid" />
+			<FieldRef ID="{93df9772-1e34-40c5-8c54-4bf3cdd56b34}" Name="ValueExpression" />
+			<FieldRef ID="{d43e8a19-f4f3-4e6a-b8c1-02e972c3ed6f}" Name="PercentExpression" />
+			<FieldRef ID="{96226eed-ec6f-4f0e-add5-9cfe66a441a0}" Name="AutoUpdate" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>SharePointKpiDisplayForm</Display>
+					<Edit>SharePointKpiEditForm</Edit>
+					<New>SharePointKpiNewForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

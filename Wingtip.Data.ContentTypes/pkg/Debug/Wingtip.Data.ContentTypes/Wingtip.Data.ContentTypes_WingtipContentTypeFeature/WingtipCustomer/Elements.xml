@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <!-- Site Colums specific for the DevLeapCustomer Content Type -->
+  <Field
+    ID="{AC689935-8E8B-485e-A45E-FF5A338DD92F}"
+    Name="WingtipCustomerLevel"
+    StaticName="WingtipCustomerLevel"
+    DisplayName="Customer Level"
+    Type="Choice"
+    Group="Wingtip Columns">
+    <Default>Level C</Default>
+    <CHOICES>
+      <CHOICE>Level A</CHOICE>
+      <CHOICE>Level B</CHOICE>
+      <CHOICE>Level C</CHOICE>
+    </CHOICES>
+  </Field>
+
+  
+  <!-- Parent ContentType: Item 0x0100D654C9A8BF564992A0E65F8ACB0D4B66 Wingtip.WingtipContact -->
+  <ContentType ID="0x0100D654C9A8BF564992A0E65F8ACB0D4B6600D458F4EF7D494F43B84D46C30F7BA444"
+               Name="WingtipCustomer"
+               Group="Wingtip Content Types"
+               Description="Customer of Wingtip"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef
+       ID="{AC689935-8E8B-485e-A45E-FF5A338DD92F}"
+       Name="WingtipCustomerLevel"
+       Required="TRUE" />
+    </FieldRefs>    
+  </ContentType>
+</Elements>

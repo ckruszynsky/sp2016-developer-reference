@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SharePointSiteUrl>http://dev.wingtip.com/</SharePointSiteUrl>
+    <WorkflowDebuggingClientSecret>XbHCbDrNpRS31oDIDAsIwNV2+yXLk/SC+sAerAyADA8=</WorkflowDebuggingClientSecret>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{C1CDDADD-2546-481F-9697-4EA41081F2FC}">
+        <ProjectStore>
+          <IsWorkflowDebuggingEnabled>false</IsWorkflowDebuggingEnabled>
+          <AppInstancePackageModifiedTime>2017-08-29T13:23:31.5646268Z</AppInstancePackageModifiedTime>
+          <AppInstanceId>70af1fd0-5993-40d0-8a9d-c2cbb6a541be</AppInstanceId>
+        </ProjectStore>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

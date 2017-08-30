@@ -1,0 +1,4 @@
+obj\x86\Debug\_Wingtip.WF.SampleFlow.g.cs
+obj\x86\Debug\Workflow1.g.cs
+obj\x86\Debug\Wingtip.WF.SampleFlow_Workflow1_BeforeInitializeComponentHelper.cs
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.SampleFlow\obj\x86\Debug\Wingtip.WF.SampleFlow_Workflow1_CompiledExpressionRoot.cs

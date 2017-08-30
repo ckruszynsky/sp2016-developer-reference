@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="ca545eb6-bf3c-4feb-b72e-271a44560965" Scope="Site" Title="Web Template feature of exported web template Projects">
+  <ElementManifests>
+    <ElementFile Location="CustomProjects\ONet.xml" />
+    <ElementManifest Location="CustomProjects\Elements.xml" />
+    <ElementFile Location="Resources\resources.en-US.resx" />
+  </ElementManifests>
+</Feature>

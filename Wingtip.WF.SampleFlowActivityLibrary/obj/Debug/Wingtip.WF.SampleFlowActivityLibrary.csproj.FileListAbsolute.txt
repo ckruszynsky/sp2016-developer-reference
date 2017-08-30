@@ -1,0 +1,4 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.SampleFlowActivityLibrary\bin\Debug\Wingtip.WF.SampleFlowActivityLibrary.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.SampleFlowActivityLibrary\bin\Debug\Wingtip.WF.SampleFlowActivityLibrary.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.SampleFlowActivityLibrary\obj\Debug\Wingtip.WF.SampleFlowActivityLibrary.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\WingTip\Wingtip.WF.SampleFlowActivityLibrary\obj\Debug\Wingtip.WF.SampleFlowActivityLibrary.pdb

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkflowInfo Language="en-us">
+  <Actions>
+    <Action Name="Validate Credit Card"
+        ClassName="Wingtip.WF.CustomActivities.CreditCardValidationActivity"
+        Assembly="Wingtip.WF.CustomActivities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0a28255954d10b23"
+        Category="Wingtip" AppliesTo="all">
+      <RuleDesigner Sentence="Validate credit card number %1 (Output to: %2)">
+        <FieldBind Field="CreditCard" DesignerType="TextBox" Id="1" Text="CreditCard" DisplayName="CreditCard" />
+        <FieldBind Field="ValidationResult" DesignerType="ParameterNames" Id="2" Text="Result" DisplayName="Result" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="CreditCard" Type="System.String, mscorlib" Direction="In" DesignerType="TextArea" Description="The credit card number" />
+        <Parameter Name="ValidationResult" Type="System.Boolean, mscorlib" Direction="Out" DesignerType="ParameterNames" Description="The validation result" />
+      </Parameters>
+    </Action>
+  </Actions>
+</WorkflowInfo>

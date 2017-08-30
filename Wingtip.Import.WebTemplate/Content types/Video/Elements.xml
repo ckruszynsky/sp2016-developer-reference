@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0120D520A808" Name="Video" Group="Digital Asset Content Types" Description="Upload or link to a video." Overwrite="TRUE" FeatureId="{6e1e5426-2ebd-4871-8027-c5ca86371ead}" ProgId="Sharepoint.VideoSet" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Video" />
+		<FieldRefs>
+			<FieldRef ID="{b76b58ec-0549-4f00-9575-2fd28bd55010}" Name="VideoSetDescription" />
+			<FieldRef ID="{2de1df7b-48e1-4c8e-be0f-f00e504b9948}" Name="VideoSetOwner" />
+			<FieldRef ID="{e4cd7ce1-9e29-497b-886e-619e5442acad}" Name="VideoSetThumbnailTimeIndex" />
+			<FieldRef ID="{1f300f90-c9d2-41f5-8ebb-7f2829a4c977}" Name="VideoSetDefaultEncoding" />
+			<FieldRef ID="{28bb615a-bb92-43eb-9770-4f2926228dee}" Name="VideoSetUserOverrideEncoding" />
+			<FieldRef ID="{1c2cc9d2-3c9f-4a46-8088-17287d608270}" Name="VideoSetExternalLink" />
+			<FieldRef ID="{ac836bb9-18e1-4f52-b614-e8885543c4c6}" Name="VideoSetEmbedCode" />
+			<FieldRef ID="{9cb4d391-367f-4342-8f17-ac808799784a}" Name="VideoSetShowDownloadLink" />
+			<FieldRef ID="{6e4ee0c4-4d06-4c04-8d02-58d10fdf912d}" Name="VideoSetShowEmbedLink" />
+			<FieldRef ID="{f1393ce1-ac10-4696-987d-cfdcc40ad342}" Name="VideoSetRenditionsInfo" />
+			<FieldRef ID="{f39d44af-d3f3-4ae6-b43f-ac7330b5e9bd}" Name="AlternateThumbnailUrl" ShowInEditForm="FALSE" />
+			<FieldRef ID="{59cd571e-e2d9-485d-bb5d-e70d12f8d0b7}" Name="VideoWidthInPixels" ShowInEditForm="FALSE" />
+			<FieldRef ID="{84cd09bd-85a9-461f-86e3-4c3c1738ad6b}" Name="VideoHeightInPixels" ShowInEditForm="FALSE" />
+			<FieldRef ID="{de38f937-8578-435e-8cd3-50be3ea59253}" Name="MediaLengthInSeconds" ShowInEditForm="FALSE" />
+			<FieldRef ID="{bcd999a7-9dca-4824-a515-878bee641ed3}" Name="PeopleInMedia" />
+			<FieldRef ID="{b0e12a3b-cf63-47d1-8418-4ef850d87a3c}" Name="NoCrawl" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+				<FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+					<Edit>_layouts/15/EditVideoSet.aspx</Edit>
+					<New>_layouts/15/NewVideoSet.aspx</New>
+				</FormUrls>
+			</XmlDocument>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+				<spe:Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+					<Receiver>
+						<Name>DocumentSet ItemUpdated</Name>
+						<Synchronization>Synchronous</Synchronization>
+						<Type>10002</Type>
+						<SequenceNumber>100</SequenceNumber>
+						<Url />
+						<Assembly>Microsoft.Office.DocumentManagement, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+						<Class>Microsoft.Office.DocumentManagement.DocumentSets.DocumentSetEventReceiver</Class>
+						<Data />
+						<Filter />
+					</Receiver>
+					<Receiver>
+						<Name>DocumentSet ItemAdded</Name>
+						<Synchronization>Synchronous</Synchronization>
+						<Type>10001</Type>
+						<SequenceNumber>100</SequenceNumber>
+						<Url />
+						<Assembly>Microsoft.Office.DocumentManagement, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+						<Class>Microsoft.Office.DocumentManagement.DocumentSets.DocumentSetItemsEventReceiver</Class>
+						<Data />
+						<Filter />
+					</Receiver>
+					<Receiver>
+						<Name>DocumentSet ItemAdding</Name>
+						<Synchronization>Synchronous</Synchronization>
+						<Type>1</Type>
+						<SequenceNumber>100</SequenceNumber>
+						<Url />
+						<Assembly>Microsoft.Office.DocumentManagement, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+						<Class>Microsoft.Office.DocumentManagement.DocumentSets.DocumentSetItemsEventReceiver</Class>
+						<Data />
+						<Filter />
+					</Receiver>
+					<Receiver>
+						<Name>DocumentSet ItemUpdating</Name>
+						<Synchronization>Synchronous</Synchronization>
+						<Type>2</Type>
+						<SequenceNumber>100</SequenceNumber>
+						<Url />
+						<Assembly>Microsoft.Office.DocumentManagement, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+						<Class>Microsoft.Office.DocumentManagement.DocumentSets.DocumentSetItemsEventReceiver</Class>
+						<Data />
+						<Filter />
+					</Receiver>
+				</spe:Receivers>
+			</XmlDocument>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/allowedcontenttypes">
+				<act:AllowedContentTypes xmlns:act="http://schemas.microsoft.com/office/documentsets/allowedcontenttypes" LastModified="08/24/2017 18:30:47">
+					<AllowedContentType id="0x0101" />
+					<AllowedContentType id="0x0101009148F5A04DDD49CBA7127AADA5FB792B00291D173ECE694D56B19D111489C4369D" />
+					<AllowedContentType id="0x0101009148F5A04DDD49CBA7127AADA5FB792B006973ACD696DC4858A76371B2FB2F439A" />
+					<AllowedContentType id="0x0101009148F5A04DDD49CBA7127AADA5FB792B00AADE34325A8B49CDA8BB4DB53328F214" />
+				</act:AllowedContentTypes>
+			</XmlDocument>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/welcomepageview">
+				<WelcomePageView xmlns="http://schemas.microsoft.com/office/documentsets/welcomepageview" LastModified="1/1/1 0:00:01 AM" />
+			</XmlDocument>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/sharedfields">
+				<SharedFields xmlns="http://schemas.microsoft.com/office/documentsets/sharedfields" LastModified="1/1/1 0:00:01 AM" />
+			</XmlDocument>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/office/videosets/videosettemplate">
+				<VideoSetTemplate xmlns="http://schemas.microsoft.com/office/videosets/videosettemplate" LastModified="1/1/1 0:00:01 AM" />
+			</XmlDocument>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/defaultdocuments">
+				<DefaultDocuments xmlns="http://schemas.microsoft.com/office/documentsets/defaultdocuments" LastModified="1/1/1 0:00:01 AM" AddSetName="" />
+			</XmlDocument>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>VideoSetEditForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/welcomepagefields">
+				<WelcomePageFields xmlns="http://schemas.microsoft.com/office/documentsets/welcomepagefields" LastModified="1/1/1 0:00:01 AM" />
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

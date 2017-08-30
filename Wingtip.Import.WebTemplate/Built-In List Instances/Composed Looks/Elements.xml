@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00000000-0000-0000-0000-000000000000}" TemplateType="124" Title="Composed Looks" Description="Use this list to store composed looks. These looks can be applied to this site by navigating to Site Settings and choosing Change the look." Url="_catalogs/design" CustomSchema="Files\_catalogs\design\Schema.xml" HyperlinkBaseUrl="http://dev.wingtip.com/projects" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

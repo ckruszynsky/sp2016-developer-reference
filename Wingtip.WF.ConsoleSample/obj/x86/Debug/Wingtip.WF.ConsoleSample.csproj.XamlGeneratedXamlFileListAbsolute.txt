@@ -1,0 +1,2 @@
+obj\x86\Debug\VacationWorkflow.g.xaml
+obj\x86\Debug\DevLeap.WF4.SampleFlow_VacationWorkflow_BeforeInitializeComponentHelper.txt

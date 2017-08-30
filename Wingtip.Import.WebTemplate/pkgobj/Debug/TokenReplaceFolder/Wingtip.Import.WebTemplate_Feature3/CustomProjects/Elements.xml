@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<WebTemplate AdjustHijriDays="0" AlternateCssUrl="" AlternateHeader="" BaseTemplateID="10002" BaseTemplateName="WTPROJECTS" BaseConfigurationID="0" CalendarType="1" Collation="25" ContainsDefaultLists="TRUE" CustomizedCssFiles="" CustomJSUrl="" ExcludeFromOfflineClient="FALSE" Locale="1033" Name="CustomProjects" ParserEnabled="TRUE" PortalName="" PortalUrl="" PresenceEnabled="TRUE" ProductVersion="16" QuickLaunchEnabled="TRUE" HideSiteContentsLink="FALSE" EnableMinimalDownload="FALSE" Subweb="TRUE" SyndicationEnabled="TRUE" Time24="FALSE" TimeZone="11" Title="CustomProjects" TreeViewEnabled="FALSE" UIVersionConfigurationEnabled="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/" />
+</Elements>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/windows/2007/BusinessDataCatalog" Name="SampleCRMModel">
+  <LobSystems>
+    <LobSystem Name="SampleCRMModel" Type="DotNetAssembly">
+      <LobSystemInstances>
+        <LobSystemInstance Name="SampleCRMModel" />
+      </LobSystemInstances>
+      <Entities>
+        <Entity Name="Customer" Namespace="Wingtip.BCS.CRM.SampleCRMModel" Version="1.0.0.33">
+          <Properties>
+            <Property Name="Class" Type="System.String">Wingtip.BCS.CRM.SampleCRMModel.CustomerService, SampleCRMModel</Property>
+          </Properties>
+          <Identifiers>
+            <Identifier Name="CustomerID" TypeName="System.String" />
+          </Identifiers>
+          <Methods>
+            <Method Name="ReadList">
+              <Parameters>
+                <Parameter Name="customerList" Direction="Return">
+                  <TypeDescriptor Name="CustomerList" TypeName="System.Collections.Generic.IEnumerable`1[[Wingtip.BCS.CRM.Customer, SampleCRMModel]]" IsCollection="true">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="Customer" TypeName="Wingtip.BCS.CRM.Customer, SampleCRMModel" IsCollection="false" /></TypeDescriptors></TypeDescriptor></Parameter>
+              </Parameters></Method>
+            <Method Name="ReadItem">
+              <Parameters>
+                <Parameter Name="customer" Direction="Return">
+                  <TypeDescriptor Name="Customer" TypeName="Wingtip.BCS.CRM.Customer, SampleCRMModel" IsCollection="false" /></Parameter>
+                <Parameter Name="customerID" Direction="In">
+                  <TypeDescriptor Name="CustomerID" TypeName="System.String" IdentifierEntityName="Customer" IdentifierEntityNamespace="Wingtip.BCS.CRM.SampleCRMModel" IdentifierName="CustomerID" /></Parameter>
+              </Parameters></Method>
+            <Method Name="Create" />
+          </Methods></Entity>
+      </Entities>
+    </LobSystem>
+  </LobSystems>
+</Model>

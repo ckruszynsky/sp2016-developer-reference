@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="fd6ddf6e-6a44-4ada-bb40-06d4e733d76c" solutionId="fd6ddf6e-6a44-4ada-bb40-06d4e733d76c" resetWebServer="false" sharePointProductVersion="16.0" name="Wingtip.Branding.SuiteLinks" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="bc3e7e07-7f22-41b4-a204-29d19b9759a1" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="7dce8397-b03a-4308-b896-d68223e47e34" />
+  </projectItems>
+</package>

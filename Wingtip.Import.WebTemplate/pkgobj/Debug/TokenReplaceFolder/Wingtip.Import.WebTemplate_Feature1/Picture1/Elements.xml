@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x010102" Name="Picture" Group="Document Content Types" Description="Upload an image or a photograph." Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Picture" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{5f47e085-2150-41dc-b661-442f3027f552}" Name="SelectFilename" />
+			<FieldRef ID="{8553196d-ec8d-4564-9861-3dbe931050c8}" Name="FileLeafRef" Required="TRUE" />
+			<FieldRef ID="{8c06beca-0777-48f7-91c7-6da68bc07b69}" Name="Created" Hidden="TRUE" />
+			<FieldRef ID="{28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f}" Name="Modified" Hidden="TRUE" />
+			<FieldRef ID="{822c78e3-1ea9-4943-b449-57863ad33ca9}" Name="Modified_x0020_By" Hidden="FALSE" />
+			<FieldRef ID="{4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb}" Name="Created_x0020_By" Hidden="FALSE" />
+			<FieldRef ID="{8c0d0aac-9b76-4951-927a-2490abe13c0b}" Name="PreviewOnForm" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" />
+			<FieldRef ID="{c53a03f3-f930-4ef2-b166-e0f2210c13c0}" Name="FileType" />
+			<FieldRef ID="{922551b8-c7e0-46a6-b7e3-3cf02917f68a}" Name="ImageSize" />
+			<FieldRef ID="{7e68a0f9-af76-404c-9613-6f82bc6dc28c}" Name="ImageWidth" />
+			<FieldRef ID="{1944c034-d61b-42af-aa84-647f2e74ca70}" Name="ImageHeight" />
+			<FieldRef ID="{a5d2f824-bc53-422e-87fd-765939d863a5}" Name="ImageCreateDate" />
+			<FieldRef ID="{9da97a8a-1da5-4a77-98d3-4bc10456e700}" Name="Comments" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" />
+			<FieldRef ID="{b9e6f3ae-5632-4b13-b636-9d1a2bd67120}" Name="EncodedAbsThumbnailUrl" />
+			<FieldRef ID="{a1ca0063-779f-49f9-999c-a4a2e3645b07}" Name="EncodedAbsWebImgUrl" />
+			<FieldRef ID="{7ebf72ca-a307-4c18-9e5b-9d89e1dae74f}" Name="SelectedFlag" />
+			<FieldRef ID="{76d1cc87-56de-432c-8a2a-16e5ba5331b3}" Name="NameOrTitle" />
+			<FieldRef ID="{de1baa4b-2117-473b-aa0c-4d824034142d}" Name="RequiredField" />
+			<FieldRef ID="{b66e9b50-a28e-469b-b1a0-af0e45486874}" Name="Keywords" ShowInNewForm="FALSE" ShowInFileDlg="FALSE" />
+			<FieldRef ID="{ac7bb138-02dc-40eb-b07a-84c15575b6e9}" Name="Thumbnail" />
+			<FieldRef ID="{bd716b26-546d-43f2-b229-62699581fa9f}" Name="Preview" />
+			<FieldRef ID="{1f43cd21-53c5-44c5-8675-b8bb86083244}" Name="ThumbnailExists" />
+			<FieldRef ID="{3ca8efcd-96e8-414f-ba90-4c8c4a8bfef8}" Name="PreviewExists" />
+			<FieldRef ID="{f39d44af-d3f3-4ae6-b43f-ac7330b5e9bd}" Name="AlternateThumbnailUrl" />
+		</FieldRefs>
+		<DocumentTemplate TargetName="/_layouts/15/upload.aspx" />
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>DocumentLibraryForm</Display>
+					<Edit>DocumentLibraryForm</Edit>
+					<New>DocumentLibraryForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

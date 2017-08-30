@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Wingtip.Services.WCFCustomerService.CustomerService" CodeBehind="CustomerService.svc.cs" %>

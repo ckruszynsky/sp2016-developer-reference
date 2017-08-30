@@ -1,0 +1,28 @@
+<Activity mc:Ignorable="sads" x:Class="Wingtip.WF.SP.SampleWorkflow.CheckoutItem.Workflow"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:p="wf://workflow.windows.net/$Activities"
+ xmlns:p1="http://schemas.microsoft.com/workflow/2012/07/xaml/activities"
+ xmlns:s="clr-namespace:System;assembly=mscorlib"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence sads:DebugSymbol.Symbol="9xDcCCnZgalKQ1Jvgtjx9SObfEM6XFVzZXJzXEFkbWluaXN0cmF0b3JcRG9jdW1lbnRzXFZpc3VhbCBTdHVkaW8gMjAxNVxQcm9qZWN0c1xXaW5nVGlwXFdpbmd0aXAuV0YuU1AuU2FtcGxlV29ya2Zsb3dcQ2hlY2tvdXRJdGVtXFdvcmtmbG93LnhhbWwDKwNADgIBASwFPBYCAQQ9BT1sAgEC">
+    <p:CheckOutItem ItemGuid="{x:Null}">
+      <p:CheckOutItem.ItemId>
+        <InArgument x:TypeArguments="x:Int32">
+          <p1:ExpressionContainerValue x:TypeArguments="x:Int32">
+            <p:GetCurrentItemId />
+          </p1:ExpressionContainerValue>
+        </InArgument>
+      </p:CheckOutItem.ItemId>
+      <p:CheckOutItem.ListId>
+        <InArgument x:TypeArguments="s:Guid">
+          <p1:ExpressionContainerValue x:TypeArguments="s:Guid">
+            <p:GetCurrentListId />
+          </p1:ExpressionContainerValue>
+        </InArgument>
+      </p:CheckOutItem.ListId>
+    </p:CheckOutItem>
+    <p:WriteToHistory Message="Document checked-out!" />
+  </Sequence>
+</Activity>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x010027FC2137D8DE4B00A40E14346D070D52" Name="Site Membership" Group="Community Content Types" Description="Add a new member" Overwrite="TRUE" FeatureId="{4326e7fc-f35a-4b0f-927c-36264b0a4cf0}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Site Membership" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="FALSE" Hidden="TRUE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" />
+			<FieldRef ID="{9e1a17bc-4b5a-498b-a0f7-e5d1ed43c349}" Name="Member" />
+			<FieldRef ID="{da25725f-5b12-4b26-8ed0-e560e4a87fff}" Name="MemberStatus" />
+			<FieldRef ID="{e236652c-cf8f-4917-8baa-30ffcccfb7e8}" Name="MemberStatusInt" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>ListForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

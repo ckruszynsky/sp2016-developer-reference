@@ -1,0 +1,2 @@
+VacationWorkflow.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

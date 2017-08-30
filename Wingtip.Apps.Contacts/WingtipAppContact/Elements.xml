@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Site Columns used by the Content Type -->
+  <Field
+    ID="{A488D535-2172-4FC7-B03B-66C66BB9A85C}"
+    Name="WingtipAppContactDescription"
+    StaticName="WingtipAppContactDescription"
+    DisplayName="Description"
+    Type="Text"
+    Group="Wingtip Columns"
+    Sortable="TRUE" />
+  <Field
+    ID="{A26CFC11-0347-46CC-B396-D78C0C50F3D1}"
+    Name="WingtipAppContactTelephone"
+    StaticName="WingtipAppContactTelephone"
+    DisplayName="Telephone"
+    Type="Text"
+    Group="Wingtip Columns"
+    Sortable="TRUE" />
+  <Field
+    ID="{03F8C076-29FB-4892-A25D-411A3EE68AD0}"
+    Name="WingtipAppContactEmail"
+    StaticName="WingtipAppContactEmail"
+    DisplayName="Email"
+    Type="Text"
+    Group="Wingtip Columns"
+    Sortable="TRUE" />
+  <Field
+    ID="{F204F073-6804-4CA6-B5CB-96B6516F8519}"
+    Name="WingtipAppContactPhoto"
+    StaticName="WingtipAppContactPhoto"
+    DisplayName="Photo"
+    Type="URL"
+    Format="Image"
+    Group="Wingtip Columns"
+    Sortable="TRUE" />
+
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01007362B29CCAEF4214B1F31BC6E40F6B2D"
+               Name="WingtipAppContact"
+               Group="Wingtip Content Types"
+               Description="AppContact Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{A488D535-2172-4FC7-B03B-66C66BB9A85C}" />
+      <FieldRef ID="{A26CFC11-0347-46CC-B396-D78C0C50F3D1}" />
+      <FieldRef ID="{03F8C076-29FB-4892-A25D-411A3EE68AD0}" />
+      <FieldRef ID="{F204F073-6804-4CA6-B5CB-96B6516F8519}" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

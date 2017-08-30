@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<store>
+  <categories>
+    <category id="FOOD" description="Food" />
+    <category id="BEV" description="Beverages" />
+    <category id="APPAREL" description="Shoes and Dresses" />
+    <category id="UTILS" description="Utilities and Tools" />
+  </categories>
+  <products>
+    <product code="P01" description="Meat" categoryId="FOOD" price="15.00" />
+    <product code="P02" description="Filet" categoryId="FOOD" price="18.00" />
+    <product code="P03" description="Biscuits" categoryId="FOOD" price="4.00" />
+    <product code="P04" description="Olive Oil" categoryId="FOOD" price="35.00" />
+    <product code="P05" description="Chips" categoryId="FOOD" price="3.00" />
+    <product code="P06" description="Water" categoryId="BEV" price="0.50" />
+    <product code="P07" description="Red Wine" categoryId="BEV" price="7.00" />
+    <product code="P08" description="White Wine" categoryId="BEV" price="9.00" />
+    <product code="P09" description="Beer" categoryId="BEV" price="3.50" />
+    <product code="P10" description="Weiss Bier" categoryId="BEV" price="4.00" />
+    <product code="P11" description="Cap" categoryId="APPAREL" price="45.00" />
+    <product code="P12" description="T-Shirt" categoryId="APPAREL" price="12.00" />
+    <product code="P13" description="Coat" categoryId="APPAREL" price="210.00" />
+    <product code="P14" description="Screwdriver" categoryId="UTILS" price="7.00" />
+    <product code="P15" description="Hairdryer" categoryId="UTILS" price="31.00" />
+  </products>
+</store>

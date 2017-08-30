@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0106" Name="Contact" Group="List Content Types" Description="Store information about a business or personal contact." Overwrite="TRUE" FeatureId="{695b6570-a48b-4a8e-8ea5-26ea7fc1d162}" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<Folder TargetName="_cts/Contact" />
+		<FieldRefs>
+			<FieldRef ID="{c042a256-787d-4a6f-8a8a-cf6ab767f12d}" Name="ContentType" />
+			<FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" Name="LinkTitle" DisplayName="Last Name" />
+			<FieldRef ID="{bc91a437-52e7-49e1-8c4e-4698904b2b6d}" Name="LinkTitleNoMenu" DisplayName="Last Name" />
+			<FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" DisplayName="Last Name" />
+			<FieldRef ID="{fdc8216d-dabf-441d-8ac0-f6c626fbdc24}" Name="LastNamePhonetic" Required="FALSE" Hidden="$Resources:core,True_Unless_Jpn" />
+			<FieldRef ID="{4a722dd4-d406-4356-93f9-2550b8f50dd0}" Name="FirstName" />
+			<FieldRef ID="{ea8f7ca9-2a0e-4a89-b8bf-c51a6af62c73}" Name="FirstNamePhonetic" Hidden="$Resources:core,True_Unless_Jpn" />
+			<FieldRef ID="{475c2610-c157-4b91-9e2d-6855031b3538}" Name="FullName" />
+			<FieldRef ID="{fce16b4c-fe53-4793-aaab-b4892e736d15}" Name="Email" />
+			<FieldRef ID="{038d1503-4629-40f6-adaf-b47d1ab2d4fe}" Name="Company" />
+			<FieldRef ID="{034aae88-6e9a-4e41-bc8a-09b6c15fcdf4}" Name="CompanyPhonetic" Hidden="$Resources:core,True_Unless_Jpn" />
+			<FieldRef ID="{c4e0f350-52cc-4ede-904c-dd71a3d11f7d}" Name="JobTitle" />
+			<FieldRef ID="{fd630629-c165-4513-b43c-fdb16b86a14d}" Name="WorkPhone" />
+			<FieldRef ID="{2ab923eb-9880-4b47-9965-ebf93ae15487}" Name="HomePhone" />
+			<FieldRef ID="{2a464df1-44c1-4851-949d-fcd270f0ccf2}" Name="CellPhone" />
+			<FieldRef ID="{9d1cacc8-f452-4bc1-a751-050595ad96e1}" Name="WorkFax" />
+			<FieldRef ID="{fc2e188e-ba91-48c9-9dd3-16431afddd50}" Name="WorkAddress" />
+			<FieldRef ID="{6ca7bd7f-b490-402e-af1b-2813cf087b1e}" Name="WorkCity" />
+			<FieldRef ID="{ceac61d3-dda9-468b-b276-f4a6bb93f14f}" Name="WorkState" />
+			<FieldRef ID="{9a631556-3dac-49db-8d2f-fb033b0fdc24}" Name="WorkZip" />
+			<FieldRef ID="{3f3a5c85-9d5a-4663-b925-8b68a678ea3a}" Name="WorkCountry" />
+			<FieldRef ID="{a71affd2-dcc7-4529-81bc-2fe593154a5f}" Name="WebPage" />
+			<FieldRef ID="{9da97a8a-1da5-4a77-98d3-4bc10456e700}" Name="Comments" />
+		</FieldRefs>
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+				<FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+					<Display>ListForm</Display>
+					<Edit>ListForm</Edit>
+					<New>ListForm</New>
+				</FormTemplates>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

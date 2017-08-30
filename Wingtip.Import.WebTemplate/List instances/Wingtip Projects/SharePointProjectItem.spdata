@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.ListInstance" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Schema.xml" Target="Files\Lists\Projects\" Type="ElementFile" />
+    <ProjectItemFile Source="Elements.xml" Target="Wingtip Projects\" Type="ElementManifest" />
+  </Files>
+</ProjectItem>

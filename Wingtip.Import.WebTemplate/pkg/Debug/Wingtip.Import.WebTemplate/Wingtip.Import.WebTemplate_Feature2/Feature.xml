@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="39017226-5fb0-4bac-af02-7047df517ef9" Scope="Web" Title="Modules feature of exported web template &quot;Projects&quot;">
+  <ElementManifests>
+    <ElementManifest Location="_catalogsdesign_pages\Elements.xml" />
+    <ElementManifest Location="_catalogsmasterpageForms_pages\Elements.xml" />
+    <ElementManifest Location="_catalogsmasterpage_global\Elements.xml" />
+    <ElementManifest Location="ListsProjects_pages\Elements.xml" />
+    <ElementManifest Location="_SiteTemplates_WTPROJECTS\Elements.xml" />
+    <ElementFile Location="Resources\resources.en-US.resx" />
+  </ElementManifests>
+</Feature>

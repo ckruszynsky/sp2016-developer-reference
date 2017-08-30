@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    RegistrationType="ContentType"
+    RegistrationId="0x010100DFCFE30E0795465F8973EF29B73F1551"
+    Id="Wingtip.CustomActions.Invoices.Notifications"
+    Location="CommandUI.Ribbon.ListView">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+          Location="Ribbon.Tabs._children">
+          <Tab
+            Id="Wingtip.CustomActions.Invoices.NotificationsTab"
+            Title="Notification &amp; Status"
+            Description="This tab holds commands for Status and Notifications."
+            Sequence="1000">
+            <Scaling
+              Id="Wingtip.CustomActions.Invoices.NotificationsTab.Scaling">
+              <MaxSize
+                Id="Wingtip.CustomActions.Invoices.NotificationsTab.One.Scaling.MaxSize"
+                GroupId="Wingtip.CustomActions.Invoices.NotificationsTab.GroupOne"
+                Size="TwoLarge"/>
+              <MaxSize
+                Id="Wingtip.CustomActions.Invoices.NotificationsTab.Two.Scaling.MaxSize"
+                GroupId="Wingtip.CustomActions.Invoices.NotificationsTab.GroupTwo"
+                Size="TwoLarge"/>
+              <Scale
+                Id="Wingtip.CustomActions.Invoices.NotificationsTab.One.Scaling.Scale"
+                GroupId="Wingtip.CustomActions.Invoices.NotificationsTab.GroupOne"
+                Size="TwoLarge" />
+              <Scale
+                Id="Wingtip.CustomActions.Invoices.NotificationsTab.Two.Scaling.Scale"
+                GroupId="Wingtip.CustomActions.Invoices.NotificationsTab.GroupTwo"
+                Size="TwoLarge" />
+            </Scaling>
+            <Groups Id="Wingtip.CustomActions.Invoices.NotificationsTab.Groups">
+              <Group
+                Id="Wingtip.CustomActions.Invoices.NotificationsTab.GroupOne"
+                Description="This is the Notification Area group."
+                Title="Notification"
+                Sequence="10"
+                Template="Wingtip.CustomActions.Invoices.RibbonTemplate.Notification">
+                <Controls
+                  Id="Wingtip.CustomActions.Invoices.NotificationsTab.GroupOne.Controls">
+                  <Button
+                    Id="Wingtip.CustomActions.Invoices.NotificationsTab.GroupOne.ShowNotification"
+                    Command="ShowNotificationCommand"
+                    Sequence="10"
+                    Description="Show Notification command."
+                    Image16by16="/_layouts/15/images/Wingtip.UI.Extensions/Baloon_16x16.png"
+                    Image32by32="/_layouts/15/images/Wingtip.UI.Extensions/Baloon_32x32.png"
+                    LabelText="Show Notification"
+                    TemplateAlias="customOne"/>
+                  <Button
+                    Id="Wingtip.CustomActions.Invoices.NotificationsTab.GroupOne.HideNotification"
+                    Command="HideNotificationCommand"
+                    Sequence="20"
+                    Description="Hide Notification command."
+                    Image16by16="/_layouts/15/images/Wingtip.UI.Extensions/Baloon_16x16.png"
+                    Image32by32="/_layouts/15/images/Wingtip.UI.Extensions/Baloon_32x32.png"
+                    LabelText="Hide Notification"
+                    TemplateAlias="customTwo"/>
+                </Controls>
+              </Group>
+              <Group
+                Id="Wingtip.CustomActions.Invoices.NotificationsTab.GroupTwo"
+                Description="This is the Status Area group."
+                Title="Status"
+                Sequence="20"
+                Template="Wingtip.CustomActions.Invoices.RibbonTemplate.Status">
+                <Controls Id="Wingtip.CustomActions.Invoices.NotificationsTab.GroupTwo.Controls">
+                  <Button
+                    Id="Wingtip.CustomActions.Invoices.NotificationsTab.GroupTwo.ShowStatus"
+                    Command="ShowStatusCommand"
+                    Sequence="30"
+                    Description="Show Status command."
+                    Image16by16="/_layouts/15/images/Wingtip.UI.Extensions/Baloon_16x16.png"
+                    Image32by32="/_layouts/15/images/Wingtip.UI.Extensions/Baloon_32x32.png"
+                    LabelText="Show Status"
+                    TemplateAlias="customThree"/>
+                  <Button
+                    Id="Wingtip.CustomActions.Invoices.NotificationsTab.GroupTwo.HideStatus"
+                    Command="HideStatusCommand"
+                    Sequence="40"
+                    Description="Hide status command."
+                    Image16by16="/_layouts/15/images/Wingtip.UI.Extensions/Baloon_16x16.png"
+                    Image32by32="/_layouts/15/images/Wingtip.UI.Extensions/Baloon_32x32.png"
+                    LabelText="Hide Status"
+                    TemplateAlias="customFour"/>
+                </Controls>
+              </Group>
+            </Groups>
+          </Tab>
+        </CommandUIDefinition>
+        <CommandUIDefinition Location="Ribbon.Templates._children">
+          <GroupTemplate Id="Wingtip.CustomActions.Invoices.RibbonTemplate.Notification">
+            <Layout
+              Title="TwoLarge"
+              LayoutTitle="TwoLarge">
+              <Section Alignment="Top" Type="OneRow">
+                <Row>
+                  <ControlRef DisplayMode="Large" TemplateAlias="customOne" />
+                  <ControlRef DisplayMode="Large" TemplateAlias="customTwo" />
+                </Row>
+              </Section>
+            </Layout>
+          </GroupTemplate>
+        </CommandUIDefinition>
+        <CommandUIDefinition Location="Ribbon.Templates._children">
+          <GroupTemplate Id="Wingtip.CustomActions.Invoices.RibbonTemplate.Status">
+            <Layout
+              Title="TwoLarge"
+              LayoutTitle="TwoLarge">
+              <Section Alignment="Top" Type="OneRow">
+                <Row>
+                  <ControlRef DisplayMode="Large" TemplateAlias="customThree" />
+                  <ControlRef DisplayMode="Large" TemplateAlias="customFour" />
+                </Row>
+              </Section>
+            </Layout>
+          </GroupTemplate>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler
+          Command="ShowNotificationCommand"
+          CommandAction="javascript:
+            this.notifyId = SP.UI.Notify.addNotification('Notification message ...', true);" />
+        <CommandUIHandler
+          Command="HideNotificationCommand"
+          CommandAction="javascript:
+            SP.UI.Notify.removeNotification(this.notifyId);" />
+        <CommandUIHandler
+          Command="ShowStatusCommand"
+          CommandAction="javascript:
+            this.statusId = SP.UI.Status.addStatus('Status message ...');
+            SP.UI.Status.setStatusPriColor(this.statusId, 'red');" />
+        <CommandUIHandler
+          Command="HideStatusCommand"
+          CommandAction="javascript:
+            SP.UI.Status.removeStatus(this.statusId);" />
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+  <CustomAction
+      Location="ScriptLink"
+      Id="Wingtip.CustomActions.Invoices.NotificationsTab"
+      ScriptBlock="
+        var notifyId = '';
+        var statusId = '';
+      " />
+</Elements>
